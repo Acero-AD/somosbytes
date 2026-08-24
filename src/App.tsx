@@ -1,11 +1,10 @@
-import { Suspense, useMemo, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
+import { Suspense, lazy, useMemo, useState } from 'react'
 import { FallbackPage } from './fallback/FallbackPage'
-import { Experience } from './scene/Experience'
-import { useScene } from './state/store'
-import { Loader } from './ui/Loader'
-import { Overlay } from './ui/Overlay'
+import { portfolio } from './content/portfolio'
 import { isWebGLAvailable } from './utils/webgl'
+
+// Keeps three.js out of the initial bundle; fallback visitors never load it.
+const Scene3DApp = lazy(() => import('./Scene3DApp'))
 
 const SKIP_KEY = 'skip3d'
 
@@ -15,6 +14,22 @@ const readSkip = () => {
   } catch {
     return false
   }
+}
+
+// Shown while the 3D chunk itself downloads; the drei-based Loader inside it
+// takes over (same styling) once the chunk arrives.
+function Splash({ onSkip }: { onSkip: () => void }) {
+  return (
+    <div className="loader">
+      <h1>{portfolio.name}</h1>
+      <div className="loader-bar">
+        <div style={{ width: '10%' }} />
+      </div>
+      <button type="button" className="loader-skip" onClick={onSkip}>
+        Skip 3D →
+      </button>
+    </div>
+  )
 }
 
 export default function App() {
@@ -55,34 +70,9 @@ export default function App() {
   return (
     <>
       {show3d && (
-        <div className="app">
-          <Canvas
-            shadows
-            dpr={[1, 2]}
-            // static scene: render only when something invalidates (camera
-            // transitions via CameraControls, hover pulses via Hotspot)
-            frameloop="demand"
-            camera={{ position: [4.5, 4, 4.5], fov: 45 }}
-            onCreated={({ gl }) => {
-              gl.domElement.addEventListener('webglcontextlost', (event) => {
-                event.preventDefault()
-                setContextLost(true)
-              })
-            }}
-            // clicks that hit no mesh return to overview (back() no-ops there);
-            // ignored mid-flight so stray clicks don't cancel a zoom-in
-            onPointerMissed={() => {
-              const { isTransitioning, back } = useScene.getState()
-              if (!isTransitioning) back()
-            }}
-          >
-            <Suspense fallback={null}>
-              <Experience />
-            </Suspense>
-          </Canvas>
-          <Overlay onSkip={skip} />
-          <Loader onSkip={skip} />
-        </div>
+        <Suspense fallback={<Splash onSkip={skip} />}>
+          <Scene3DApp onSkip={skip} onContextLost={() => setContextLost(true)} />
+        </Suspense>
       )}
       <FallbackPage active={!show3d} contextLost={contextLost} onEnter3d={webgl ? enter3d : undefined} />
     </>
