@@ -16,7 +16,7 @@ Diego needs a personal portfolio site that gathers his projects, Substack, CV, a
 - A plain semantic HTML fallback rendering the same content, used when WebGL is unavailable or the visitor opts out ("Skip 3D"), and always present in the DOM for SEO.
 - Single typed content source consumed by both the 3D scene and the fallback.
 - Free CC0 low-poly GLTF assets + procedural geometry; no Blender pipeline, no light baking.
-- Fully static build output (`dist/`), deployed to SeQura's `tech-ai-tools` S3 bucket.
+- Fully static build output (`dist/`); hosting is handled personally by Diego outside this workspace.
 
 ## Capabilities
 
@@ -37,4 +37,4 @@ _None — greenfield project, no existing specs._
 - New codebase under `src/` (scene, state, content, UI overlay, fallback) plus `public/` assets (GLB models, CV PDF, icons).
 - New dependencies: `react`, `react-dom`, `three`, `@react-three/fiber`, `@react-three/drei`, `zustand`; dev-only `leva`, `r3f-perf`.
 - No backend, no APIs — all links are external (GitHub, Substack, CV PDF served statically).
-- Hosting: static upload to the `tech-ai-tools` S3 bucket (access via Slack #ai-tools); build must be self-contained (no CDN-fetched assets at runtime).
+- Hosting: personal, outside this workspace; the build must be fully static and self-contained (no CDN-fetched assets at runtime) so it works on any static host.

@@ -2,7 +2,7 @@
 
 ## Context
 
-Greenfield repo (`somosbytes`). Owner is a software engineer comfortable with React/TS, new-ish to Three.js. Output must be a fully static Vite build (no SSR, no server routes), self-contained (no runtime CDN fetches), deployed to SeQura's `tech-ai-tools` S3 bucket. Local toolchain: Node v22, npm 11.
+Greenfield repo (`somosbytes`). Owner is a software engineer comfortable with React/TS, new-ish to Three.js. Output must be a fully static Vite build (no SSR, no server routes), self-contained (no runtime CDN fetches). This is a personal project: Diego hosts the `dist/` output himself, outside this workspace. Local toolchain: Node v22, npm 11.
 
 ## Goals / Non-Goals
 
@@ -65,7 +65,7 @@ src/
 
 ## Migration Plan
 
-Not applicable (greenfield). Ship = upload `dist/` to the `tech-ai-tools` S3 bucket; rollback = re-upload previous build.
+Not applicable (greenfield). Ship = Diego uploads `dist/` to his personal host; rollback = re-upload the previous build.
 
 ## Open Questions
 
