@@ -10,9 +10,9 @@
 
 ## 2. Decoration
 
-- [ ] 2.1 Copy `loungeChair`, `pillow`, `bear`, `lampRoundTable`, `coatRackStanding`, `rugDoormat`, `plantSmall1` GLBs from the Kenney kit into `public/models/` and register them in `KenneyModel.tsx`
-- [ ] 2.2 Create procedural `WallPoster.tsx` (palette plane + frame) and `FakeWindow.tsx` (frame + emissive sky plane) in `scene/objects/`
-- [ ] 2.3 Place all decor in `Experience.tsx` per design D6: air gap ≥0.25 from hotspot hit boxes, `castShadow={false}` on flat/minor decor
+- [x] 2.1 Copy `loungeChair`, `pillow`, `bear`, `lampRoundTable`, `coatRackStanding`, `rugDoormat`, `plantSmall1` GLBs from the Kenney kit into `public/models/` and register them in `KenneyModel.tsx`
+- [x] 2.2 Create procedural `WallPoster.tsx` (palette plane + frame) and `FakeWindow.tsx` (frame + emissive sky plane) in `scene/objects/`
+- [x] 2.3 Place all decor in `Experience.tsx` per design D6: air gap ≥0.25 from hotspot hit boxes, `castShadow={false}` on flat/minor decor
 - [ ] 2.4 Verify decor (playwright-cli): all 4 hotspots still focus from overview and at 390x844 tap positions; overview + orbit-extreme screenshots show no hotspot/label occlusion; draw calls <120 via `__glInfo`; idle still renders zero frames
 
 ## 3. Wrap up

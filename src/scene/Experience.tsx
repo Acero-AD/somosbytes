@@ -8,6 +8,8 @@ import { Pc } from './objects/Pc'
 import { MagazineStack } from './objects/MagazineStack'
 import { CvFrame } from './objects/CvFrame'
 import { Phone } from './objects/Phone'
+import { WallPoster } from './objects/WallPoster'
+import { FakeWindow } from './objects/FakeWindow'
 import { palette } from './palette'
 
 // Kenney desk top (0.384 * KENNEY_SCALE).
@@ -64,6 +66,19 @@ export function Experience() {
       <KenneyModel model="bookcaseOpenLow" position={[2, 0, -2.63]} />
       <KenneyModel model="books" position={[2, 0.8, -2.63]} />
       <KenneyModel model="pottedPlant" position={[2.72, 0, -2.55]} />
+      <KenneyModel model="lampRoundTable" position={[2.3, 0.8, -2.68]} castShadow={false} />
+
+      {/* decoration — placed with air gap around every hotspot hit box */}
+      <KenneyModel model="loungeChair" position={[-1.15, 0, 2.1]} rotation={[0, 0.55, 0]} />
+      <KenneyModel model="bear" position={[-1.2, 0.28, 2.1]} rotation={[0, 0.7, 0]} scale={1.3} castShadow={false} />
+      <KenneyModel model="pillow" position={[-1.45, 0.45, 2.3]} rotation={[-0.35, 0.6, 0]} castShadow={false} />
+      <KenneyModel model="coatRackStanding" position={[2.75, 0, -1.3]} />
+      <KenneyModel model="rugDoormat" position={[1.3, 0.002, 2.6]} rotation={[0, 0.15, 0]} castShadow={false} />
+      <KenneyModel model="plantSmall1" position={[-2.75, 0, 1.55]} castShadow={false} />
+      <FakeWindow position={[-1.3, 1.7, -2.89]} />
+      <WallPoster color={palette.mint} position={[1.35, 1.85, -2.89]} />
+      <WallPoster color={palette.blush} position={[2.05, 1.65, -2.89]} width={0.4} height={0.5} />
+      <WallPoster color={palette.sky} position={[-2.89, 1.75, 0.6]} rotation={[0, Math.PI / 2, 0]} width={0.55} height={0.42} />
     </>
   )
 }

@@ -19,11 +19,18 @@ const MODEL_NAMES = [
   'chairDesk',
   'tableCoffee',
   'pottedPlant',
+  'plantSmall1',
   'plantSmall2',
   'rugRound',
+  'rugDoormat',
   'lampRoundFloor',
+  'lampRoundTable',
   'books',
   'bookcaseOpenLow',
+  'loungeChair',
+  'pillow',
+  'bear',
+  'coatRackStanding',
 ] as const
 
 export type KenneyModelName = (typeof MODEL_NAMES)[number]
@@ -32,13 +39,15 @@ const url = (name: KenneyModelName) => asset(`/models/${name}.glb`)
 
 MODEL_NAMES.forEach((name) => useGLTF.preload(url(name)))
 
-interface KenneyModelProps extends GroupProps {
+interface KenneyModelProps extends Omit<GroupProps, 'scale'> {
   model: KenneyModelName
   /** Flat props (rugs) skip the shadow pass — one draw call less per mesh. */
   castShadow?: boolean
+  /** Uniform scale override for props that read wrong at kit scale (e.g., the bear). */
+  scale?: number
 }
 
-export function KenneyModel({ model, castShadow = true, ...props }: KenneyModelProps) {
+export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, ...props }: KenneyModelProps) {
   const { scene } = useGLTF(url(model))
   const object = useMemo(() => {
     const cloned = scene.clone(true)
@@ -54,7 +63,7 @@ export function KenneyModel({ model, castShadow = true, ...props }: KenneyModelP
     return cloned
   }, [scene, castShadow])
   return (
-    <group {...props} scale={KENNEY_SCALE}>
+    <group {...props} scale={scale}>
       <primitive object={object} />
     </group>
   )
