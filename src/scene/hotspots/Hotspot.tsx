@@ -5,7 +5,6 @@ import { Color, MathUtils, Mesh, MeshStandardMaterial } from 'three'
 import type { Group } from 'three'
 import { useScene } from '../../state/store'
 import { HotspotLabel } from './HotspotLabel'
-import { HOTSPOTS } from './hotspots'
 import type { HotspotId } from './hotspots'
 
 type GroupProps = ThreeElements['group']
@@ -27,8 +26,6 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
   const enabled = useScene((s) => s.mode === 'overview' && !s.isTransitioning)
   const focus = useScene((s) => s.focus)
   const back = useScene((s) => s.back)
-  const setHoveredLabel = useScene((s) => s.setHoveredLabel)
-  const label = HOTSPOTS[id].label
   // Materials get cloned once per hotspot so highlighting never bleeds into
   // meshes that share a material (relevant once GLTF props land in M3).
   const highlightables = useMemo(() => new Set<MeshStandardMaterial>(), [])
@@ -55,20 +52,18 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
   useEffect(() => {
     if (!active) return
     document.body.style.cursor = 'pointer'
-    setHoveredLabel(label)
     for (const material of highlightables) {
       material.emissive.copy(HIGHLIGHT)
       material.emissiveIntensity = 0.3
     }
     return () => {
       document.body.style.cursor = ''
-      setHoveredLabel(null)
       for (const material of highlightables) {
         material.emissive.copy(BLACK)
         material.emissiveIntensity = 1
       }
     }
-  }, [active, label, setHoveredLabel, highlightables])
+  }, [active, highlightables])
 
   useFrame((state, delta) => {
     const group = groupRef.current

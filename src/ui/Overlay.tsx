@@ -46,7 +46,6 @@ interface OverlayProps {
 // focused-content card for non-PC hotspots, and the persistent skip link.
 export function Overlay({ onSkip }: OverlayProps) {
   const mode = useScene((s) => s.mode)
-  const hoveredLabel = useScene((s) => s.hoveredLabel)
   const activeHotspot = useScene((s) => s.activeHotspot)
   const isTransitioning = useScene((s) => s.isTransitioning)
   const back = useScene((s) => s.back)
@@ -72,7 +71,6 @@ export function Overlay({ onSkip }: OverlayProps) {
           Skip 3D →
         </button>
       )}
-      {hoveredLabel && <div className="tooltip">{hoveredLabel}</div>}
       {card && (
         <div className="focus-card">
           <h2>{card.title}</h2>

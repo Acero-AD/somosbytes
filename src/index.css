@@ -298,18 +298,6 @@ body:has(.app) {
   font-size: 24px;
 }
 
-.tooltip {
-  position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 8px 16px;
-  border-radius: 16px;
-  background: rgba(63, 58, 53, 0.85);
-  color: #fbf6ee;
-  font-size: 14px;
-}
-
 .focus-card {
   pointer-events: auto;
   position: absolute;
