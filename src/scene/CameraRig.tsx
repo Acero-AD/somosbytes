@@ -1,11 +1,26 @@
 import { useEffect, useRef } from 'react'
+import { useThree } from '@react-three/fiber'
 import { CameraControls } from '@react-three/drei'
 import CameraControlsImpl from 'camera-controls'
 import { Vector3 } from 'three'
 import { useScene } from '../state/store'
 import { HOTSPOTS, OVERVIEW_POSE } from './hotspots/hotspots'
+import type { CameraPose } from './hotspots/hotspots'
 
 const { ACTION } = CameraControlsImpl
+
+// Poses are authored for a landscape viewport; on narrow (portrait) screens
+// dolly the camera out along its own axis so the framed width still fits.
+function fitPose(pose: CameraPose, aspect: number): CameraPose {
+  const factor = Math.max(1, 1.15 / aspect)
+  if (factor === 1) return pose
+  const [tx, ty, tz] = pose.target
+  const [px, py, pz] = pose.position
+  return {
+    target: pose.target,
+    position: [tx + (px - tx) * factor, ty + (py - ty) * factor, tz + (pz - tz) * factor],
+  }
+}
 
 export function CameraRig() {
   const controlsRef = useRef<CameraControlsImpl>(null)
@@ -13,6 +28,7 @@ export function CameraRig() {
   const activeHotspot = useScene((s) => s.activeHotspot)
   const isTransitioning = useScene((s) => s.isTransitioning)
   const arrived = useScene((s) => s.arrived)
+  const aspect = useThree((state) => state.size.width / state.size.height)
   // Guards stale setLookAt promises: only the latest transition may call arrived().
   const transitionId = useRef(0)
 
@@ -25,8 +41,6 @@ export function CameraRig() {
     controls.mouseButtons.wheel = ACTION.NONE
     controls.touches.two = ACTION.NONE
     controls.touches.three = ACTION.NONE
-    const { position: p, target: t } = OVERVIEW_POSE
-    void controls.setLookAt(p[0], p[1], p[2], t[0], t[1], t[2], false)
   }, [])
 
   // User rotation only in settled overview; NONE (not .enabled=false, which
@@ -56,23 +70,27 @@ export function CameraRig() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [])
 
+  const firstRun = useRef(true)
   useEffect(() => {
     const controls = controlsRef.current
     if (!controls) return
-    const { position: p, target: t } = activeHotspot
-      ? HOTSPOTS[activeHotspot].pose
-      : OVERVIEW_POSE
+    const pose = fitPose(activeHotspot ? HOTSPOTS[activeHotspot].pose : OVERVIEW_POSE, aspect)
+    const [px, py, pz] = pose.position
+    const [tx, ty, tz] = pose.target
+    const animate = !firstRun.current
+    firstRun.current = false
     const id = ++transitionId.current
-    void controls.setLookAt(p[0], p[1], p[2], t[0], t[1], t[2], true).then(() => {
+    void controls.setLookAt(px, py, pz, tx, ty, tz, animate).then(() => {
       if (transitionId.current === id) arrived()
     })
-  }, [activeHotspot, arrived])
+  }, [activeHotspot, arrived, aspect])
 
   return (
     <CameraControls
       ref={controlsRef}
       makeDefault
-      smoothTime={0.5}
+      smoothTime={0.35}
+      restThreshold={0.01}
       minPolarAngle={0.7}
       maxPolarAngle={1.35}
       minAzimuthAngle={0.35}

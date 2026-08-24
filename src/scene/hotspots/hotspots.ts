@@ -11,8 +11,8 @@ export interface HotspotDef {
 // Camera poses are data: tune them with the dev-only pose logger in
 // CameraRig (orbit, frame the shot, press "p", paste here).
 export const OVERVIEW_POSE: CameraPose = {
-  position: [4.2, 3.6, 4.4],
-  target: [-0.4, 0.9, -0.4],
+  position: [3.9, 3.1, 4.1],
+  target: [-0.45, 0.75, -0.45],
 }
 
 export const HOTSPOTS = {

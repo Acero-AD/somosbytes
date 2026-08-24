@@ -39,3 +39,8 @@ export const useScene = create<SceneState>((set, get) => ({
   },
   setHoveredLabel: (hoveredLabel) => set({ hoveredLabel }),
 }))
+
+// Dev/e2e hook: lets browser automation assert the state machine directly.
+if (import.meta.env.DEV) {
+  ;(window as unknown as Record<string, unknown>).__scene = useScene
+}

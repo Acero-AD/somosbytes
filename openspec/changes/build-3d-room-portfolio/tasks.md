@@ -17,7 +17,7 @@
 - [x] 2.5 Add dev-only `p` keydown pose logger; author all poses in `hotspots/hotspots.ts` (4 hotspots + `OVERVIEW_POSE`) — initial poses computed geometrically; visual fine-tune happens in 4.5
 - [x] 2.6 Implement `hotspots/Hotspot.tsx`: enablement gating, click→focus with stopPropagation, hover emissive highlight + scale pulse + cursor, invisible oversized hit mesh
 - [x] 2.7 Implement `ui/Overlay.tsx`: back button (hidden in overview), Escape listener, shared hover tooltip; wire `onPointerMissed` + floor/wall click → `back()`
-- [ ] 2.8 Verify M1: click all 4 cubes; return via Esc/back/click-outside for each; mid-flight clicks ignored; tap-test in DevTools device emulation (iPhone SE, Pixel)
+- [x] 2.8 Verify M1: click all 4 cubes; return via Esc/back/click-outside for each; mid-flight clicks ignored; tap-test in DevTools device emulation (iPhone SE, Pixel) — verified with playwright-cli (desktop 1280x800 + portrait 390x844); found & fixed: aspect-aware camera dolly for portrait, restThreshold tuning (settle 3s→1.7s), tightened overview pose
 
 ## 3. PC screen UI (M2)
 
