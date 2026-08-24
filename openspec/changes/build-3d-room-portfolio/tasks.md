@@ -42,6 +42,6 @@
 - [x] 5.2 Implement `ui/Loader.tsx` splash with `useProgress` + "Skip 3D" link; add `useGLTF.preload` calls
 - [x] 5.3 Add static `<title>`, meta description, OpenGraph tags, and noscript block with key links to `index.html`
 - [x] 5.4 Add `webglcontextlost` handler with reload / classic-view actions; `100dvh` canvas container
-- [ ] 5.5 Perf tuning: `dpr={[1,2]}`, decide `frameloop` (always vs demand), r3f-perf audit; model compression only if `public/models` > ~2–3 MB
+- [x] 5.5 Perf tuning: `dpr={[1,2]}`, decide `frameloop` (always vs demand), r3f-perf audit; model compression only if `public/models` > ~2–3 MB — frameloop=demand (idle renders zero frames; hover/transitions invalidate), models 152KB so no compression
 - [ ] 5.6 Verify M4: fallback via `?no3d`, via Skip 3D, and with WebGL disabled in browser; semantic content visible in DOM inspector; `npm run build && npm run preview` and re-run M1/M2 click-throughs against the production build; Lighthouse mobile pass
 - [ ] 5.7 Hand off `dist/` for upload to the `tech-ai-tools` S3 bucket (request access in Slack #ai-tools); verify live URL end-to-end

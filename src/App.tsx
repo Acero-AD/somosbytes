@@ -59,6 +59,9 @@ export default function App() {
           <Canvas
             shadows
             dpr={[1, 2]}
+            // static scene: render only when something invalidates (camera
+            // transitions via CameraControls, hover pulses via Hotspot)
+            frameloop="demand"
             camera={{ position: [4.5, 4, 4.5], fov: 45 }}
             onCreated={({ gl }) => {
               gl.domElement.addEventListener('webglcontextlost', (event) => {

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { useFrame } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import type { ThreeElements, ThreeEvent } from '@react-three/fiber'
 import { Color, MathUtils, Mesh, MeshStandardMaterial } from 'three'
 import type { Group } from 'three'
@@ -45,6 +45,11 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
   }, [highlightables])
 
   const active = hovered && enabled
+  const invalidate = useThree((s) => s.invalidate)
+
+  // frameloop is "demand": kick rendering when the hover state changes so the
+  // highlight shows and the pulse loop below can take over.
+  useEffect(() => invalidate(), [active, invalidate])
 
   useEffect(() => {
     if (!active) return
@@ -69,6 +74,8 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
     if (!group) return
     const target = active ? 1.03 + Math.sin(state.clock.elapsedTime * 5) * 0.01 : 1
     group.scale.setScalar(MathUtils.damp(group.scale.x, target, 8, delta))
+    // keep frames coming while pulsing or settling back to rest
+    if (active || Math.abs(group.scale.x - 1) > 0.001) state.invalidate()
   })
 
   const onClick = (e: ThreeEvent<MouseEvent>) => {
