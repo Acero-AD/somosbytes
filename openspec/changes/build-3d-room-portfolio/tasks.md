@@ -5,7 +5,7 @@
 - [x] 1.1 Bootstrap Vite react-ts template in repo root (`npm create vite@latest . -- --template react-ts`), clean demo boilerplate
 - [x] 1.2 Install runtime deps (`@react-three/fiber`, `@react-three/drei`, `zustand`; let peer ranges pick `three`) and dev deps (`leva`, `r3f-perf`, `@types/three` only if TS complains)
 - [x] 1.3 Set `base: './'` in `vite.config.ts`; create folder skeleton per design D8; add `public/models`, `public/cv`, `public/icons`
-- [ ] 1.4 Write `src/content/types.ts` and `src/content/portfolio.ts` with real content (projects, Substack URL, CV path, socials); drop CV PDF into `public/cv/`
+- [x] 1.4 Write `src/content/types.ts` and `src/content/portfolio.ts` with real content (projects, Substack URL, CV path, socials); drop CV PDF into `public/cv/` — NOTE: placeholder content + placeholder PDF per Diego's choice; TODO markers in `portfolio.ts`
 - [ ] 1.5 Render a `<Canvas>` with a spinning cube; verify `npm run dev` works; initial git commit
 
 ## 2. Gray-box room + navigation (M1)
