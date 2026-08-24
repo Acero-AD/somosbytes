@@ -10,7 +10,7 @@
 
 ## 2. Gray-box room + navigation (M1)
 
-- [ ] 2.1 Build `Room.tsx`: floor + two walls (corner diorama) with palette colors from `scene/palette.ts`
+- [x] 2.1 Build `Room.tsx`: floor + two walls (corner diorama) with palette colors from `scene/palette.ts`
 - [ ] 2.2 Add 4 placeholder `RoundedBox` props in `scene/objects/` (Pc, MagazineStack, CvFrame, Phone positions)
 - [ ] 2.3 Implement `state/store.ts` zustand state machine (`mode`, `activeHotspot`, `isTransitioning`, `hoveredLabel`, `focus`, `back`)
 - [ ] 2.4 Implement `CameraRig.tsx` with drei `CameraControls`: overview pose, clamped orbit (no truck/dolly), `setLookAt` fly-tos driven by store, promise-on-rest clears `isTransitioning`, disable controls when focused
