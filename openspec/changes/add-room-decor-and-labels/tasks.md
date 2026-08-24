@@ -17,5 +17,5 @@
 
 ## 3. Wrap up
 
-- [ ] 3.1 Re-check overview framing after decor; nudge `OVERVIEW_POSE` if composition needs it
-- [ ] 3.2 `npm run build && npm run preview`: production click-through of all four hotspots; commit per task group
+- [x] 3.1 Re-check overview framing after decor; nudge `OVERVIEW_POSE` if composition needs it
+- [x] 3.2 `npm run build && npm run preview`: production click-through of all four hotspots; commit per task group
