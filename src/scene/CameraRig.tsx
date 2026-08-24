@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { CameraControls } from '@react-three/drei'
 import CameraControlsImpl from 'camera-controls'
+import { Vector3 } from 'three'
 import { useScene } from '../state/store'
 import { HOTSPOTS, OVERVIEW_POSE } from './hotspots/hotspots'
 
@@ -37,6 +38,23 @@ export function CameraRig() {
     controls.mouseButtons.left = interactive ? ACTION.ROTATE : ACTION.NONE
     controls.touches.one = interactive ? ACTION.TOUCH_ROTATE : ACTION.NONE
   }, [mode, isTransitioning])
+
+  // Dev-only pose authoring: orbit, frame the shot, press "p", paste the
+  // logged pose into hotspots.ts.
+  useEffect(() => {
+    if (!import.meta.env.DEV) return
+    const fmt = (v: Vector3) =>
+      `[${v.toArray().map((n) => Number(n.toFixed(2))).join(', ')}]`
+    const onKeyDown = (e: KeyboardEvent) => {
+      const controls = controlsRef.current
+      if (e.key !== 'p' || !controls) return
+      const position = controls.getPosition(new Vector3())
+      const target = controls.getTarget(new Vector3())
+      console.log(`pose: { position: ${fmt(position)}, target: ${fmt(target)} }`)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [])
 
   useEffect(() => {
     const controls = controlsRef.current
