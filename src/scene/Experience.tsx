@@ -1,3 +1,4 @@
+import { CameraRig } from './CameraRig'
 import { Lights } from './Lights'
 import { Room } from './Room'
 import { Desk, DESK_TOP_Y } from './objects/Desk'
@@ -11,6 +12,7 @@ export function Experience() {
   return (
     <>
       <color attach="background" args={[palette.background]} />
+      <CameraRig />
       <Lights />
       <Room />
       <Desk position={[0, 0, -2.5]} />

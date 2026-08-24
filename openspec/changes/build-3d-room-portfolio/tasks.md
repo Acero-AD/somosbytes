@@ -13,7 +13,7 @@
 - [x] 2.1 Build `Room.tsx`: floor + two walls (corner diorama) with palette colors from `scene/palette.ts`
 - [x] 2.2 Add 4 placeholder `RoundedBox` props in `scene/objects/` (Pc, MagazineStack, CvFrame, Phone positions)
 - [x] 2.3 Implement `state/store.ts` zustand state machine (`mode`, `activeHotspot`, `isTransitioning`, `hoveredLabel`, `focus`, `back`) — includes `hotspots.ts` data skeleton (store's `HotspotId` derives from it)
-- [ ] 2.4 Implement `CameraRig.tsx` with drei `CameraControls`: overview pose, clamped orbit (no truck/dolly), `setLookAt` fly-tos driven by store, promise-on-rest clears `isTransitioning`, disable controls when focused
+- [x] 2.4 Implement `CameraRig.tsx` with drei `CameraControls`: overview pose, clamped orbit (no truck/dolly), `setLookAt` fly-tos driven by store, promise-on-rest clears `isTransitioning`, disable controls when focused (via ACTION.NONE — `.enabled=false` would freeze our own transitions)
 - [ ] 2.5 Add dev-only `p` keydown pose logger; author all poses in `hotspots/hotspots.ts` (4 hotspots + `OVERVIEW_POSE`)
 - [ ] 2.6 Implement `hotspots/Hotspot.tsx`: enablement gating, click→focus with stopPropagation, hover emissive highlight + scale pulse + cursor, invisible oversized hit mesh
 - [ ] 2.7 Implement `ui/Overlay.tsx`: back button (hidden in overview), Escape listener, shared hover tooltip; wire `onPointerMissed` + floor/wall click → `back()`
