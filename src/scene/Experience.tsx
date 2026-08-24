@@ -29,7 +29,8 @@ export function Experience() {
   return (
     <>
       <color attach="background" args={[palette.background]} />
-      <fog attach="fog" args={[palette.background, 11, 24]} />
+      {/* far range: the portrait aspect-dolly parks the camera ~15 units out */}
+      <fog attach="fog" args={[palette.background, 18, 40]} />
       {import.meta.env.DEV && <DevStats />}
       <CameraRig />
       <Lights />
@@ -49,7 +50,7 @@ export function Experience() {
       </Hotspot>
 
       {/* reading corner */}
-      <KenneyModel model="rugRound" position={[-1.75, 0.002, 0.75]} />
+      <KenneyModel model="rugRound" position={[-1.75, 0.002, 0.75]} castShadow={false} />
       <Hotspot id="magazines" position={[-1.75, 0, 0.75]} hitSize={[1.4, 0.75, 0.9]} hitOffset={[0, 0.35, 0]}>
         <KenneyModel model="tableCoffee" />
         <MagazineStack position={[0, 0.46, 0]} rotation={[0, 0.3, 0]} />

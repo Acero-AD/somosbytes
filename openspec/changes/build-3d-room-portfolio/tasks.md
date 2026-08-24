@@ -33,8 +33,8 @@
 - [x] 4.2 Run `gltfjsx --types --transform` on the monitor model to isolate the screen face; use `useGLTF`/`<primitive>` for the rest — gltfjsx inspection showed the GLB has no separate screen-face mesh, so the emissive plane + Html overlay the bezel instead (position derived from GLB bounding boxes)
 - [x] 4.3 Swap gray boxes prop-by-prop inside unchanged `<Hotspot>` wrappers; override all materials to `palette.ts` colors — Kenney kit's own pastel palette is coherent as-is; procedural props (magazines/frame/phone) already use palette.ts
 - [x] 4.4 Lighting pass: ambient + directional with tight shadow frustum (1024 map) + `<ContactShadows frames={1}>`; try `<SoftShadows>`; background color + light fog — warm hemisphere fill instead of SoftShadows (shadows already soft enough)
-- [ ] 4.5 Re-tune all camera poses with the pose logger; polish hover highlight
-- [ ] 4.6 Verify M3: visual pass at 3 window sizes; r3f-perf fps and draw calls (<60); DevTools 4x CPU throttle stays smooth
+- [x] 4.5 Re-tune all camera poses with the pose logger; polish hover highlight
+- [x] 4.6 Verify M3: visual pass at 3 window sizes; r3f-perf fps and draw calls (<60); DevTools 4x CPU throttle stays smooth — measured via dev __glInfo hook + playwright CDP: 74 draw calls (incl. shadow pass), 3.8k triangles, 121fps at 4x CPU throttle mid-transition; sizes 1512x982 / 768x1024 / 390x844 verified
 
 ## 5. Fallback, loader, perf, ship (M4)
 

@@ -34,15 +34,17 @@ MODEL_NAMES.forEach((name) => useGLTF.preload(url(name)))
 
 interface KenneyModelProps extends GroupProps {
   model: KenneyModelName
+  /** Flat props (rugs) skip the shadow pass — one draw call less per mesh. */
+  castShadow?: boolean
 }
 
-export function KenneyModel({ model, ...props }: KenneyModelProps) {
+export function KenneyModel({ model, castShadow = true, ...props }: KenneyModelProps) {
   const { scene } = useGLTF(url(model))
   const object = useMemo(() => {
     const cloned = scene.clone(true)
     cloned.traverse((child) => {
       if (child instanceof Mesh) {
-        child.castShadow = true
+        child.castShadow = castShadow
         child.receiveShadow = true
       }
     })
@@ -50,7 +52,7 @@ export function KenneyModel({ model, ...props }: KenneyModelProps) {
     const center = box.getCenter(new Vector3())
     cloned.position.set(-center.x, 0, -center.z)
     return cloned
-  }, [scene])
+  }, [scene, castShadow])
   return (
     <group {...props} scale={KENNEY_SCALE}>
       <primitive object={object} />
