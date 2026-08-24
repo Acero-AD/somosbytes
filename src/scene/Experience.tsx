@@ -16,6 +16,7 @@ export function Experience() {
   return (
     <>
       <color attach="background" args={[palette.background]} />
+      <fog attach="fog" args={[palette.background, 11, 24]} />
       <CameraRig />
       <Lights />
       <Room />
