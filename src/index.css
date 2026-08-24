@@ -161,6 +161,44 @@ body:has(.app) {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  /* above the hotspot label chips (Html zIndexRange caps at 40) */
+  z-index: 50;
+}
+
+.hotspot-label {
+  min-height: 34px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 17px;
+  background: rgba(63, 58, 53, 0.85);
+  color: #fbf6ee;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.35s ease-out,
+    transform 0.35s ease-out,
+    background 0.15s ease-out;
+}
+
+.hotspot-label:hover {
+  background: rgba(63, 58, 53, 1);
+}
+
+.hotspot-label-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .hotspot-label {
+    font-size: 11px;
+    min-height: 28px;
+    padding: 4px 10px;
+  }
 }
 
 .back-button {

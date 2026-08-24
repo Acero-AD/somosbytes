@@ -4,6 +4,7 @@ import type { ThreeElements, ThreeEvent } from '@react-three/fiber'
 import { Color, MathUtils, Mesh, MeshStandardMaterial } from 'three'
 import type { Group } from 'three'
 import { useScene } from '../../state/store'
+import { HotspotLabel } from './HotspotLabel'
 import { HOTSPOTS } from './hotspots'
 import type { HotspotId } from './hotspots'
 
@@ -100,6 +101,7 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
       <mesh visible={false} position={hitOffset}>
         <boxGeometry args={hitSize} />
       </mesh>
+      <HotspotLabel id={id} />
       {children}
     </group>
   )
