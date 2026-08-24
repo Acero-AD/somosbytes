@@ -1,5 +1,6 @@
 import { portfolio } from '../../content/portfolio'
 import { useScene } from '../../state/store'
+import { asset } from '../../utils/asset'
 
 // Mini OS desktop rendered as real DOM on the monitor plane. Rendered at 2x
 // CSS pixels and scaled down in Pc.tsx to stay sharp on mobile Safari.
@@ -28,7 +29,7 @@ export function ScreenUI() {
             rel="noreferrer"
             title={project.description}
           >
-            <img src={project.icon} alt="" draggable={false} />
+            <img src={asset(project.icon)} alt="" draggable={false} />
             <span>{project.title}</span>
           </a>
         ))}

@@ -135,3 +135,50 @@ body {
   color: #fbf6ee;
   font-size: 14px;
 }
+
+.focus-card {
+  pointer-events: auto;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, calc(100vw - 32px));
+  padding: 20px 24px;
+  border-radius: 20px;
+  background: rgba(251, 246, 238, 0.94);
+  color: #3f3a35;
+  box-shadow: 0 12px 32px rgba(63, 58, 53, 0.25);
+  animation: screen-fade-in 0.35s ease-out both;
+}
+
+.focus-card h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.focus-card p {
+  margin: 0 0 14px;
+  font-size: 15px;
+}
+
+.focus-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.focus-card-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 22px;
+  background: #3f3a35;
+  color: #fbf6ee;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.focus-card-links a:hover {
+  background: #5a534c;
+}
