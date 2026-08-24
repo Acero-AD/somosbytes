@@ -25,7 +25,7 @@
 - [x] 3.2 Implement `screen/ScreenUI.tsx`: desktop wallpaper, icon grid from `portfolio.projects`, real anchors (`target="_blank" rel="noreferrer"`), description tooltips
 - [x] 3.3 Mount `<Html transform>` with ScreenUI only in `screen` mode, positioned on the screen plane; opacity fade on mount/unmount; `pointerEvents` gated by `isTransitioning` — mounts from fly-in start (activeHotspot==='pc') so the fade plays during arrival; DOM clicks stopPropagation so they don't leak into R3F raycasting
 - [x] 3.4 Implement focused overlay cards in `Overlay.tsx` for magazine/CV/phone hotspots (title, description, external link from content module) — added `asset()` BASE_URL helper so public/ paths survive bucket-subpath hosting
-- [ ] 3.5 Verify M2: full journey — monitor→arrive→icons open correct URLs in new tabs; icons inert during fly-in; Esc exits screen; other hotspots' cards link to CV PDF/Substack/socials
+- [x] 3.5 Verify M2: full journey — monitor→arrive→icons open correct URLs in new tabs; icons inert during fly-in; Esc exits screen; other hotspots' cards link to CV PDF/Substack/socials — verified end-to-end with playwright-cli
 
 ## 4. Real assets + look (M3)
 
