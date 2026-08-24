@@ -36,10 +36,15 @@ function cardFor(id: HotspotId): CardContent | null {
   }
 }
 
+interface OverlayProps {
+  /** Switches to the classic (fallback) view; offered persistently in overview. */
+  onSkip: () => void
+}
+
 // DOM layer over the canvas: back button, Escape handling, the single shared
-// hotspot tooltip (fed by the store instead of per-hotspot <Html>), and the
-// focused-content card for non-PC hotspots.
-export function Overlay() {
+// hotspot tooltip (fed by the store instead of per-hotspot <Html>), the
+// focused-content card for non-PC hotspots, and the persistent skip link.
+export function Overlay({ onSkip }: OverlayProps) {
   const mode = useScene((s) => s.mode)
   const hoveredLabel = useScene((s) => s.hoveredLabel)
   const activeHotspot = useScene((s) => s.activeHotspot)
@@ -60,6 +65,11 @@ export function Overlay() {
       {mode !== 'overview' && (
         <button type="button" className="back-button" onClick={back}>
           ← Back
+        </button>
+      )}
+      {mode === 'overview' && (
+        <button type="button" className="skip-link" onClick={onSkip}>
+          Skip 3D →
         </button>
       )}
       {hoveredLabel && <div className="tooltip">{hoveredLabel}</div>}

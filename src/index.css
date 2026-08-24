@@ -13,7 +13,143 @@ body,
 
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #efe6da;
+  color: #3f3a35;
+}
+
+body:has(.app) {
   overflow: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.loader {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: #efe6da;
+  transition: opacity 0.45s ease-out;
+}
+
+.loader-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+}
+
+.loader-bar {
+  width: min(260px, 60vw);
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(63, 58, 53, 0.15);
+  overflow: hidden;
+}
+
+.loader-bar div {
+  height: 100%;
+  border-radius: 3px;
+  background: #3f3a35;
+  transition: width 0.2s ease-out;
+}
+
+.skip-link {
+  pointer-events: auto;
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: none;
+  background: none;
+  color: rgba(63, 58, 53, 0.65);
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.loader-skip {
+  min-height: 44px;
+  padding: 0 16px;
+  border: none;
+  background: none;
+  color: #3f3a35;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fallback {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  line-height: 1.6;
+}
+
+.fallback h1 {
+  margin: 0 0 4px;
+  font-size: 32px;
+}
+
+.fallback-tagline {
+  margin: 0 0 32px;
+  color: #6b6259;
+}
+
+.fallback h2 {
+  margin: 28px 0 8px;
+  font-size: 20px;
+}
+
+.fallback ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.fallback a {
+  color: #2f5d50;
+}
+
+.fallback-banner {
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #f2b8c6;
+}
+
+.fallback-banner button,
+.fallback-enter {
+  min-height: 44px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 22px;
+  background: #3f3a35;
+  color: #fbf6ee;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.fallback-enter {
+  margin-top: 36px;
 }
 
 .app {
