@@ -30,8 +30,8 @@
 ## 4. Real assets + look (M3)
 
 - [x] 4.1 Source CC0 GLBs (Kenney Furniture Kit, Poly Pizza) into `public/models/`; record source/license notes in a `CREDITS.md` — 12 models from Kenney Furniture Kit (152KB total); phone/CV frame/magazines stay procedural (no fitting models in kit)
-- [ ] 4.2 Run `gltfjsx --types --transform` on the monitor model to isolate the screen face; use `useGLTF`/`<primitive>` for the rest
-- [ ] 4.3 Swap gray boxes prop-by-prop inside unchanged `<Hotspot>` wrappers; override all materials to `palette.ts` colors
+- [x] 4.2 Run `gltfjsx --types --transform` on the monitor model to isolate the screen face; use `useGLTF`/`<primitive>` for the rest — gltfjsx inspection showed the GLB has no separate screen-face mesh, so the emissive plane + Html overlay the bezel instead (position derived from GLB bounding boxes)
+- [x] 4.3 Swap gray boxes prop-by-prop inside unchanged `<Hotspot>` wrappers; override all materials to `palette.ts` colors — Kenney kit's own pastel palette is coherent as-is; procedural props (magazines/frame/phone) already use palette.ts
 - [ ] 4.4 Lighting pass: ambient + directional with tight shadow frustum (1024 map) + `<ContactShadows frames={1}>`; try `<SoftShadows>`; background color + light fog
 - [ ] 4.5 Re-tune all camera poses with the pose logger; polish hover highlight
 - [ ] 4.6 Verify M3: visual pass at 3 window sizes; r3f-perf fps and draw calls (<60); DevTools 4x CPU throttle stays smooth

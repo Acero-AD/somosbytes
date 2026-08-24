@@ -18,11 +18,11 @@ export const OVERVIEW_POSE: CameraPose = {
 export const HOTSPOTS = {
   pc: {
     label: 'Projects',
-    pose: { position: [0, 1.17, -1.5], target: [0, 1.17, -2.55] },
+    pose: { position: [0, 1.11, -1.45], target: [0, 1.11, -2.51] },
   },
   magazines: {
     label: 'Writing',
-    pose: { position: [-0.9, 1.5, 1.7], target: [-1.9, 0.15, 0.7] },
+    pose: { position: [-0.75, 1.35, 1.8], target: [-1.75, 0.4, 0.75] },
   },
   cvFrame: {
     label: 'CV',
@@ -30,7 +30,7 @@ export const HOTSPOTS = {
   },
   phone: {
     label: 'Contact',
-    pose: { position: [0.75, 1.6, -1.55], target: [0.75, 0.77, -2.35] },
+    pose: { position: [0.58, 1.55, -1.45], target: [0.58, 0.79, -2.22] },
   },
 } as const satisfies Record<string, HotspotDef>
 
