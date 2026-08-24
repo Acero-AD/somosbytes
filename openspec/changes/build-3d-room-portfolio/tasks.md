@@ -29,7 +29,7 @@
 
 ## 4. Real assets + look (M3)
 
-- [ ] 4.1 Source CC0 GLBs (Kenney Furniture Kit, Poly Pizza) into `public/models/`; record source/license notes in a `CREDITS.md`
+- [x] 4.1 Source CC0 GLBs (Kenney Furniture Kit, Poly Pizza) into `public/models/`; record source/license notes in a `CREDITS.md` — 12 models from Kenney Furniture Kit (152KB total); phone/CV frame/magazines stay procedural (no fitting models in kit)
 - [ ] 4.2 Run `gltfjsx --types --transform` on the monitor model to isolate the screen face; use `useGLTF`/`<primitive>` for the rest
 - [ ] 4.3 Swap gray boxes prop-by-prop inside unchanged `<Hotspot>` wrappers; override all materials to `palette.ts` colors
 - [ ] 4.4 Lighting pass: ambient + directional with tight shadow frustum (1024 map) + `<ContactShadows frames={1}>`; try `<SoftShadows>`; background color + light fog
