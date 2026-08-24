@@ -1,3 +1,4 @@
+import { useFrame, useThree } from '@react-three/fiber'
 import { CameraRig } from './CameraRig'
 import { Lights } from './Lights'
 import { Room } from './Room'
@@ -12,11 +13,24 @@ import { palette } from './palette'
 // Kenney desk top (0.384 * KENNEY_SCALE).
 export const DESK_TOP_Y = 0.77
 
+// Dev/e2e hook: exposes renderer stats for automated perf checks.
+function DevStats() {
+  const gl = useThree((s) => s.gl)
+  useFrame(() => {
+    ;(window as unknown as Record<string, unknown>).__glInfo = {
+      calls: gl.info.render.calls,
+      triangles: gl.info.render.triangles,
+    }
+  })
+  return null
+}
+
 export function Experience() {
   return (
     <>
       <color attach="background" args={[palette.background]} />
       <fog attach="fog" args={[palette.background, 11, 24]} />
+      {import.meta.env.DEV && <DevStats />}
       <CameraRig />
       <Lights />
       <Room />

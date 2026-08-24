@@ -26,11 +26,11 @@ export const HOTSPOTS = {
   },
   cvFrame: {
     label: 'CV',
-    pose: { position: [-1.7, 1.5, -1], target: [-2.87, 1.5, -1] },
+    pose: { position: [-1.45, 1.62, -1], target: [-2.87, 1.58, -1] },
   },
   phone: {
     label: 'Contact',
-    pose: { position: [0.58, 1.55, -1.45], target: [0.58, 0.79, -2.22] },
+    pose: { position: [0.95, 1.85, -1.45], target: [0.55, 0.78, -2.25] },
   },
 } as const satisfies Record<string, HotspotDef>
 
