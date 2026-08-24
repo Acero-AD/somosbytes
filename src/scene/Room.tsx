@@ -7,11 +7,15 @@ const THICKNESS = 0.2
 
 // Corner diorama: floor plus back (-z) and left (-x) walls. The overview
 // camera lives in the +x/+z quadrant, so the two open sides stay behind it.
-// Clicking any room surface while focused returns to overview.
+// Clicking any room surface while focused returns to overview — but not
+// mid-flight, so a stray click can't cancel the visitor's own zoom-in.
 export function Room() {
-  const back = useScene((s) => s.back)
+  const onClick = () => {
+    const { isTransitioning, back } = useScene.getState()
+    if (!isTransitioning) back()
+  }
   return (
-    <group onClick={back}>
+    <group onClick={onClick}>
       <mesh position={[0, -THICKNESS / 2, 0]} receiveShadow>
         <boxGeometry args={[ROOM_SIZE, THICKNESS, ROOM_SIZE]} />
         <meshStandardMaterial color={palette.floor} roughness={0.9} />

@@ -47,6 +47,83 @@ body {
   background: rgba(63, 58, 53, 1);
 }
 
+.screen-ui {
+  display: flex;
+  flex-direction: column;
+  width: 1640px;
+  height: 940px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #bfe4d6 0%, #a5c9e8 55%, #d9c3e8 100%);
+  color: #2f3a36;
+  font-size: 30px;
+  animation: screen-fade-in 0.5s ease-out both;
+  user-select: none;
+}
+
+@keyframes screen-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.screen-menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.55);
+  font-size: 28px;
+}
+
+.screen-menubar-title {
+  font-weight: 700;
+}
+
+.screen-icons {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 56px 64px;
+}
+
+.screen-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 220px;
+  padding: 28px 12px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.screen-icon:hover,
+.screen-icon:focus-visible {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.screen-icon img {
+  width: 120px;
+  height: 120px;
+}
+
+.screen-taskbar {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  height: 64px;
+  background: rgba(47, 58, 54, 0.85);
+  color: #fbf6ee;
+  font-size: 24px;
+}
+
 .tooltip {
   position: absolute;
   bottom: 28px;

@@ -10,8 +10,12 @@ export default function App() {
         shadows
         dpr={[1, 2]}
         camera={{ position: [4.5, 4, 4.5], fov: 45 }}
-        // clicks that hit no mesh return to overview (back() no-ops there)
-        onPointerMissed={() => useScene.getState().back()}
+        // clicks that hit no mesh return to overview (back() no-ops there);
+        // ignored mid-flight so stray clicks don't cancel a zoom-in
+        onPointerMissed={() => {
+          const { isTransitioning, back } = useScene.getState()
+          if (!isTransitioning) back()
+        }}
       >
         <Experience />
       </Canvas>
