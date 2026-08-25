@@ -11,28 +11,28 @@ export const portfolio: Portfolio = {
       id: 'project-one',
       title: 'Project One', // TODO: real project
       description: 'Placeholder project description. Replace me.',
-      url: 'https://github.com/diegoacero',
+      url: 'https://github.com/Acero-AD',
       icon: '/icons/project-one.svg',
     },
     {
       id: 'project-two',
       title: 'Project Two', // TODO: real project
       description: 'Placeholder project description. Replace me.',
-      url: 'https://github.com/diegoacero',
+      url: 'https://github.com/Acero-AD',
       icon: '/icons/project-two.svg',
     },
     {
       id: 'project-three',
       title: 'Project Three', // TODO: real project
       description: 'Placeholder project description. Replace me.',
-      url: 'https://github.com/diegoacero',
+      url: 'https://github.com/Acero-AD',
       icon: '/icons/project-three.svg',
     },
   ],
   substackUrl: 'https://somosbytes.substack.com', // TODO: confirm URL
   cvPdfPath: '/cv/diego-acero-cv.pdf', // placeholder file — drop the real PDF over it
   socials: [
-    { label: 'GitHub', url: 'https://github.com/diegoacero' }, // TODO
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/diegoacero' }, // TODO
+    { label: 'GitHub', url: 'https://github.com/Acero-AD' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/diego-acero-arguelles' },
   ],
 }
