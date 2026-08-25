@@ -29,7 +29,7 @@ export const portfolio: Portfolio = {
       icon: '/icons/project-three.svg',
     },
   ],
-  substackUrl: 'https://somosbytes.substack.com', // TODO: confirm URL
+  substackUrl: 'https://somosbytes.substack.com',
   cvPdfPath: '/cv/diego-acero-cv.pdf', // placeholder file — drop the real PDF over it
   socials: [
     { label: 'GitHub', url: 'https://github.com/Acero-AD' },
