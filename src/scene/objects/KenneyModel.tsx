@@ -22,6 +22,7 @@ const MODEL_NAMES = [
   'plantSmall1',
   'plantSmall2',
   'rugRound',
+  'rugRounded',
   'rugDoormat',
   'lampRoundFloor',
   'lampRoundTable',
