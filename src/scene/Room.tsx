@@ -20,6 +20,11 @@ export function Room() {
   }
   return (
     <group onClick={onClick}>
+      {/* diorama platform: grounds the room in the backdrop */}
+      <mesh position={[0.1, -0.35, 0.1]}>
+        <boxGeometry args={[7.6, 0.3, 7.6]} />
+        <meshStandardMaterial color={palette.platform} roughness={1} />
+      </mesh>
       <mesh position={[0, -THICKNESS / 2, 0]} receiveShadow>
         <boxGeometry args={[ROOM_SIZE, THICKNESS, ROOM_SIZE]} />
         <meshStandardMaterial map={floorMap} roughness={0.9} />

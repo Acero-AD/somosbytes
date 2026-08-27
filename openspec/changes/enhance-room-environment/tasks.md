@@ -8,9 +8,9 @@
 
 ## 2. World outside
 
-- [ ] 2.1 Add the platform slab under the room in `Experience.tsx`
-- [ ] 2.2 Rebuild `FakeWindow.tsx` with a layered view (sun/clouds day, moon/stars dusk scaffold — static day version first)
-- [ ] 2.3 Verify: overview + orbit-extreme screenshots show the platform grounding the room, window reads as an outside
+- [x] 2.1 Add the platform slab under the room in `Experience.tsx`
+- [x] 2.2 Rebuild `FakeWindow.tsx` with a layered view (sun/clouds day, moon/stars dusk scaffold — static day version first) — built mood-aware directly; the store mood field landed here
+- [x] 2.3 Verify: overview + orbit-extreme screenshots show the platform grounding the room, window reads as an outside
 
 ## 3. Mood modes
 

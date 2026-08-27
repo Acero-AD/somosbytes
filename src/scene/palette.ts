@@ -15,4 +15,8 @@ export const palette = {
   neonMagenta: '#e0218a',
   neonPurple: '#8b2fc9',
   neonRed: '#e8355a',
+  // environment
+  platform: '#84644a',
+  duskBackground: '#2b2136',
+  duskSky: '#252048',
 } as const
