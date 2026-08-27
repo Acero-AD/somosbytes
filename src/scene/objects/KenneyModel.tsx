@@ -48,8 +48,9 @@ interface KenneyModelProps extends Omit<GroupProps, 'scale'> {
   castShadow?: boolean
   /** Uniform scale override for props that read wrong at kit scale. */
   scale?: number
-  /** Recolor the model (materials are cloned so other instances keep theirs). */
-  tint?: string
+  /** Recolor the model (materials are cloned so other instances keep theirs).
+      A string tints every material; a map tints by material name. */
+  tint?: string | Record<string, string>
 }
 
 export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, tint, ...props }: KenneyModelProps) {
@@ -61,8 +62,12 @@ export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, ti
         child.castShadow = castShadow
         child.receiveShadow = true
         if (tint) {
-          child.material = (child.material as MeshStandardMaterial).clone()
-          ;(child.material as MeshStandardMaterial).color.set(tint)
+          const material = (child.material as MeshStandardMaterial).clone()
+          const color = typeof tint === 'string' ? tint : tint[material.name]
+          if (color) {
+            material.color.set(color)
+            child.material = material
+          }
         }
       }
     })
