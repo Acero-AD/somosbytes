@@ -19,6 +19,6 @@
 
 ## 4. Verify & ship
 
-- [ ] 4.1 Playwright: all 4 hotspots focus on desktop and 390x844; labels unobstructed; overview + orbit-extreme screenshots show logo/neon/props without occluding hotspots
-- [ ] 4.2 Budgets: draw calls <160 via `__glInfo`, idle renders zero frames, no console errors
-- [ ] 4.3 `npm run build && npm run preview` click-through; commit per task group; push
+- [x] 4.1 Playwright: all 4 hotspots focus on desktop and 390x844; labels unobstructed; overview + orbit-extreme screenshots show logo/neon/props without occluding hotspots
+- [x] 4.2 Budgets: draw calls <160 via `__glInfo`, idle renders zero frames, no console errors
+- [x] 4.3 `npm run build && npm run preview` click-through; commit per task group; push
