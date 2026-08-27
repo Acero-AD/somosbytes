@@ -12,6 +12,9 @@ import { WallPoster } from './objects/WallPoster'
 import { FakeWindow } from './objects/FakeWindow'
 import { LogoPoster } from './objects/LogoPoster'
 import { LedStrip } from './objects/LedStrip'
+import { CodeMonitor } from './objects/CodeMonitor'
+import { Printer3d } from './objects/Printer3d'
+import { ArcadeMachine } from './objects/ArcadeMachine'
 import { palette } from './palette'
 
 // Kenney desk top (0.384 * KENNEY_SCALE).
@@ -57,7 +60,8 @@ export function Experience() {
       <KenneyModel model="rugRound" position={[-1.75, 0.002, 0.75]} castShadow={false} />
       <Hotspot id="magazines" position={[-1.75, 0, 0.75]} hitSize={[1.4, 0.75, 0.9]} hitOffset={[0, 0.35, 0]}>
         <KenneyModel model="tableCoffee" />
-        <MagazineStack position={[0, 0.46, 0]} rotation={[0, 0.3, 0]} />
+        <MagazineStack position={[-0.25, 0.46, 0.05]} rotation={[0, 0.3, 0]} />
+        <KenneyModel model="laptop" position={[0.32, 0.46, -0.02]} rotation={[0, -0.5, 0]} scale={0.8} castShadow={false} />
       </Hotspot>
       <KenneyModel model="lampRoundFloor" position={[-2.45, 0, 1.9]} />
 
@@ -65,6 +69,9 @@ export function Experience() {
       <Hotspot id="cvFrame" position={[-2.87, 1.5, -1]} rotation={[0, Math.PI / 2, 0]} hitSize={[0.7, 0.9, 0.3]}>
         <CvFrame />
       </Hotspot>
+      {/* battlestation extension: code monitor on its own side table */}
+      <KenneyModel model="sideTable" position={[1.32, 0, -2.66]} castShadow={false} />
+      <CodeMonitor position={[1.32, 0.77, -2.68]} rotation={[0, 0.35, 0]} />
       <KenneyModel model="bookcaseOpenLow" position={[2, 0, -2.63]} />
       <KenneyModel model="books" position={[2, 0.8, -2.63]} />
       <KenneyModel model="pottedPlant" position={[2.72, 0, -2.55]} />
@@ -84,6 +91,11 @@ export function Experience() {
       <WallPoster color={palette.mint} position={[1.35, 1.85, -2.89]} />
       <WallPoster color={palette.blush} position={[2.05, 1.65, -2.89]} width={0.4} height={0.5} />
       <WallPoster color={palette.sky} position={[-2.89, 1.75, 0.6]} rotation={[0, Math.PI / 2, 0]} width={0.55} height={0.42} />
+
+      {/* techie corner */}
+      <KenneyModel model="sideTable" position={[-2.66, 0, -0.1]} rotation={[0, Math.PI / 2, 0]} castShadow={false} />
+      <Printer3d position={[-2.66, 0.77, -0.1]} rotation={[0, Math.PI / 2 - 0.2, 0]} />
+      <ArcadeMachine position={[-2.62, 0, -1.95]} rotation={[0, Math.PI / 2, 0]} />
     </>
   )
 }

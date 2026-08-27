@@ -31,6 +31,8 @@ const MODEL_NAMES = [
   'pillow',
   'bear',
   'coatRackStanding',
+  'laptop',
+  'sideTable',
 ] as const
 
 export type KenneyModelName = (typeof MODEL_NAMES)[number]

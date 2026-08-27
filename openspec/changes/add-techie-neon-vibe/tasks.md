@@ -12,10 +12,10 @@
 
 ## 3. Techie props
 
-- [ ] 3.1 Copy `laptop` + `sideTable` GLBs from the kit, register in `KenneyModel.tsx`; place laptop on the coffee table area
-- [ ] 3.2 Create `scene/objects/CodeMonitor.tsx` (Kenney screen + emissive code lines) angled on the desk, clear of the pc hit box
-- [ ] 3.3 Create `scene/objects/Printer3d.tsx` on a side table (right wall area)
-- [ ] 3.4 Create `scene/objects/ArcadeMachine.tsx` (emissive screen + marquee) against the left wall near the lounge
+- [x] 3.1 Copy `laptop` + `sideTable` GLBs from the kit, register in `KenneyModel.tsx`; place laptop on the coffee table area
+- [x] 3.2 Create `scene/objects/CodeMonitor.tsx` (Kenney screen + emissive code lines) angled on the desk, clear of the pc hit box
+- [x] 3.3 Create `scene/objects/Printer3d.tsx` on a side table (right wall area)
+- [x] 3.4 Create `scene/objects/ArcadeMachine.tsx` (emissive screen + marquee) against the left wall near the lounge
 
 ## 4. Verify & ship
 
