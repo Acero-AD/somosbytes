@@ -2,9 +2,9 @@
 
 ## 1. Architectural finish
 
-- [ ] 1.1 Create `utils/canvasTextures.ts` (plank + wall finish CanvasTexture generators, palette-driven, SRGB)
-- [ ] 1.2 Apply textures in `Room.tsx`; add baseboards along both walls; nudge the wall-seam LED strip onto the baseboard
-- [ ] 1.3 Verify: overview screenshot shows planks/finish/baseboards; prod build makes no external texture requests; draw calls noted
+- [x] 1.1 Create `utils/canvasTextures.ts` (plank + wall finish CanvasTexture generators, palette-driven, SRGB)
+- [x] 1.2 Apply textures in `Room.tsx`; add baseboards along both walls; nudge the wall-seam LED strip onto the baseboard
+- [x] 1.3 Verify: overview screenshot shows planks/finish/baseboards; prod build makes no external texture requests; draw calls noted
 
 ## 2. World outside
 

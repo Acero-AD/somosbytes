@@ -86,7 +86,7 @@ export function Experience() {
       <FakeWindow position={[-1.3, 1.7, -2.89]} />
       <LogoPoster position={[0, 2.15, -2.88]} />
       <LedStrip length={2.86} color={palette.neonMagenta} position={[0, 0.71, -2.17]} />
-      <LedStrip length={5.9} color={palette.neonPurple} position={[0, 0.035, -2.86]} />
+      <LedStrip length={5.9} color={palette.neonPurple} position={[0, 0.135, -2.94]} />
       <WallPoster color={palette.mint} position={[1.35, 1.85, -2.89]} />
       <WallPoster color={palette.blush} position={[2.05, 1.65, -2.89]} width={0.4} height={0.5} />
       <WallPoster color={palette.sky} position={[-2.89, 1.75, 0.6]} rotation={[0, Math.PI / 2, 0]} width={0.55} height={0.42} />
