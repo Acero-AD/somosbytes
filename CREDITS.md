@@ -10,3 +10,7 @@ Downloaded 2026-08-24 from kenney.nl (`kenney_furniture-kit.zip`, GLTF format fo
 ## Icons — `public/icons/*.svg`
 
 Drawn for this project; same license as the repository.
+
+## Logo — `public/branding/logo.jpg`
+
+Diego Acero's own avatar artwork; all rights reserved by the author.

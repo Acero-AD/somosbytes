@@ -2,8 +2,8 @@
 
 ## 1. Branding
 
-- [ ] 1.1 Copy the logo JPEG to `public/branding/logo.jpg`, note it in `CREDITS.md` (Diego's own artwork); add `neonMagenta`/`neonPurple`/`neonRed` to `palette.ts`
-- [ ] 1.2 Create `scene/objects/LogoPoster.tsx` (circleGeometry UV-crop + emissive halo ring) and place it above the desk on the back wall; verify by screenshot from overview
+- [x] 1.1 Copy the logo JPEG to `public/branding/logo.jpg`, note it in `CREDITS.md` (Diego's own artwork); add `neonMagenta`/`neonPurple`/`neonRed` to `palette.ts`
+- [x] 1.2 Create `scene/objects/LogoPoster.tsx` (circleGeometry UV-crop + emissive halo ring) and place it above the desk on the back wall; verify by screenshot from overview
 
 ## 2. Neon lighting
 

@@ -11,4 +11,8 @@ export const palette = {
   cream: '#fbf6ee',
   charcoal: '#3f3a35',
   screenGlow: '#dff1ff',
+  // brand accents, sampled from the logo artwork
+  neonMagenta: '#e0218a',
+  neonPurple: '#8b2fc9',
+  neonRed: '#e8355a',
 } as const
