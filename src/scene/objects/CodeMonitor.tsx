@@ -1,4 +1,7 @@
+import { useRef } from 'react'
+import { useFrame } from '@react-three/fiber'
 import type { ThreeElements } from '@react-three/fiber'
+import type { Mesh } from 'three'
 import { palette } from '../palette'
 import { KenneyModel } from './KenneyModel'
 
@@ -13,7 +16,12 @@ const LINES: { color: string; width: number; x: number }[] = [
 ]
 
 // Decor monitor showing glowing "code" — never a hotspot (design D5).
+// The cursor blinks on the ambient ticker's frames.
 export function CodeMonitor(props: GroupProps) {
+  const cursorRef = useRef<Mesh>(null)
+  useFrame(({ clock }) => {
+    if (cursorRef.current) cursorRef.current.visible = Math.floor(clock.elapsedTime * 1.6) % 2 === 0
+  })
   return (
     <group {...props}>
       <KenneyModel model="computerScreen" />
@@ -27,6 +35,10 @@ export function CodeMonitor(props: GroupProps) {
           <meshBasicMaterial color={color} toneMapped={false} />
         </mesh>
       ))}
+      <mesh ref={cursorRef} position={[-0.06, 0.16, 0.112]}>
+        <planeGeometry args={[0.026, 0.032]} />
+        <meshBasicMaterial color="#3ddc84" toneMapped={false} />
+      </mesh>
     </group>
   )
 }

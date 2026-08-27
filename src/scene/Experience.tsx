@@ -1,4 +1,5 @@
 import { useFrame, useThree } from '@react-three/fiber'
+import { AmbientTicker, DustMotes } from './AmbientLife'
 import { CameraRig } from './CameraRig'
 import { Lights } from './Lights'
 import { Room } from './Room'
@@ -39,6 +40,8 @@ export function Experience() {
       {/* far range: the portrait aspect-dolly parks the camera ~15 units out */}
       <fog attach="fog" args={[palette.background, 18, 40]} />
       {import.meta.env.DEV && <DevStats />}
+      <AmbientTicker />
+      <DustMotes />
       <CameraRig />
       <Lights />
       <Room />

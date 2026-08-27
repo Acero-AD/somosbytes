@@ -20,9 +20,9 @@
 
 ## 4. Ambient life
 
-- [ ] 4.1 Add `AmbientTicker` (invalidates per frame only while tab visible AND no reduced-motion; reactive to both)
-- [ ] 4.2 Add dust motes (single Points cloud, no raycast), code-monitor cursor blink, arcade screen shimmer, all clocked by the ticker
-- [ ] 4.3 Verify: visible tab renders continuously; hidden tab renders zero frames (visibility emulation); reduced-motion emulation renders zero idle frames; motes never intercept clicks
+- [x] 4.1 Add `AmbientTicker` (invalidates per frame only while tab visible AND no reduced-motion; reactive to both)
+- [x] 4.2 Add dust motes (single Points cloud, no raycast), code-monitor cursor blink, arcade screen shimmer, all clocked by the ticker
+- [x] 4.3 Verify: visible tab renders continuously; hidden tab renders zero frames (visibility emulation); reduced-motion emulation renders zero idle frames; motes never intercept clicks
 
 ## 5. Full verification & ship
 
