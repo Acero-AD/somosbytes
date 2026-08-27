@@ -26,5 +26,5 @@
 
 ## 5. Full verification & ship
 
-- [ ] 5.1 Playwright: all 4 hotspots on desktop + 390x844 in both moods; draw calls <180; no console errors
-- [ ] 5.2 `npm run build && npm run preview` click-through; commit per task group; push
+- [x] 5.1 Playwright: all 4 hotspots on desktop + 390x844 in both moods; draw calls <180; no console errors
+- [x] 5.2 `npm run build && npm run preview` click-through; commit per task group; push
