@@ -43,16 +43,18 @@ export function Experience() {
       <Lights />
       <Room />
 
-      {/* desk corner */}
-      <KenneyModel model="desk" position={[0, 0, -2.55]} />
+      {/* desk corner: two desk modules form one long battlestation */}
+      <KenneyModel model="desk" position={[-0.72, 0, -2.55]} />
+      <KenneyModel model="desk" position={[0.73, 0, -2.55]} />
       <KenneyModel model="chairDesk" position={[0.1, 0, -1.75]} rotation={[0, Math.PI + 0.25, 0]} />
       <KenneyModel model="computerKeyboard" position={[0, DESK_TOP_Y, -2.32]} />
       <KenneyModel model="computerMouse" position={[0.42, DESK_TOP_Y, -2.32]} />
       <KenneyModel model="plantSmall2" position={[-0.55, DESK_TOP_Y, -2.45]} />
+      <CodeMonitor position={[1.05, DESK_TOP_Y, -2.6]} rotation={[0, -0.35, 0]} />
       <Hotspot id="pc" position={[0, DESK_TOP_Y, -2.62]} hitSize={[1, 0.75, 0.6]} hitOffset={[0, 0.3, 0.1]}>
         <Pc />
       </Hotspot>
-      <Hotspot id="phone" position={[0.58, DESK_TOP_Y, -2.22]} rotation={[0, 0.5, 0]} hitSize={[0.4, 0.25, 0.55]} hitOffset={[0, 0.05, 0]}>
+      <Hotspot id="phone" position={[-1.05, DESK_TOP_Y, -2.28]} rotation={[0, 0.5, 0]} hitSize={[0.4, 0.25, 0.55]} hitOffset={[0, 0.05, 0]}>
         <Phone />
       </Hotspot>
 
@@ -69,9 +71,6 @@ export function Experience() {
       <Hotspot id="cvFrame" position={[-2.87, 1.5, -1]} rotation={[0, Math.PI / 2, 0]} hitSize={[0.7, 0.9, 0.3]}>
         <CvFrame />
       </Hotspot>
-      {/* battlestation extension: code monitor on its own side table */}
-      <KenneyModel model="sideTable" position={[1.32, 0, -2.66]} castShadow={false} />
-      <CodeMonitor position={[1.32, 0.77, -2.68]} rotation={[0, 0.35, 0]} />
       <KenneyModel model="bookcaseOpenLow" position={[2, 0, -2.63]} />
       <KenneyModel model="books" position={[2, 0.8, -2.63]} />
       <KenneyModel model="pottedPlant" position={[2.72, 0, -2.55]} />
@@ -86,7 +85,7 @@ export function Experience() {
       <KenneyModel model="plantSmall1" position={[-2.75, 0, 1.55]} castShadow={false} />
       <FakeWindow position={[-1.3, 1.7, -2.89]} />
       <LogoPoster position={[0, 2.15, -2.88]} />
-      <LedStrip length={1.42} color={palette.neonMagenta} position={[0, 0.71, -2.17]} />
+      <LedStrip length={2.86} color={palette.neonMagenta} position={[0, 0.71, -2.17]} />
       <LedStrip length={5.9} color={palette.neonPurple} position={[0, 0.035, -2.86]} />
       <WallPoster color={palette.mint} position={[1.35, 1.85, -2.89]} />
       <WallPoster color={palette.blush} position={[2.05, 1.65, -2.89]} width={0.4} height={0.5} />

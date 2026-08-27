@@ -35,9 +35,9 @@ export const HOTSPOTS = {
   },
   phone: {
     label: 'Contact',
-    pose: { position: [0.95, 1.85, -1.45], target: [0.55, 0.78, -2.25] },
-    // pushed right/front so the chip clears the monitor on narrow viewports
-    labelOffset: [0.3, 0.28, 0.25],
+    pose: { position: [-0.65, 1.85, -1.48], target: [-1.05, 0.78, -2.28] },
+    // pushed left/front so the chip clears the main monitor on narrow viewports
+    labelOffset: [-0.3, 0.28, 0.25],
   },
 } as const satisfies Record<string, HotspotDef>
 
