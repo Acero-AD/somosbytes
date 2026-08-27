@@ -72,6 +72,24 @@ body:has(.app) {
   transition: width 0.2s ease-out;
 }
 
+.mood-toggle {
+  pointer-events: auto;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  border-radius: 22px;
+  background: rgba(63, 58, 53, 0.85);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mood-toggle:hover {
+  background: rgba(63, 58, 53, 1);
+}
+
 .skip-link {
   pointer-events: auto;
   position: absolute;

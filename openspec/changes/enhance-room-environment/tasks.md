@@ -14,9 +14,9 @@
 
 ## 3. Mood modes
 
-- [ ] 3.1 Add `mood` to the store with localStorage persistence (default day); sun/moon toggle button in `Overlay`
-- [ ] 3.2 Wire mood into `Lights` (base dims, neon presence up), window view, background/fog; smooth ~1s lerp that invalidates while transitioning
-- [ ] 3.3 Verify: day + dusk screenshots; hotspot click-through works in dusk; reload restores the chosen mood; labels legible in both moods
+- [x] 3.1 Add `mood` to the store with localStorage persistence (default day); sun/moon toggle button in `Overlay`
+- [x] 3.2 Wire mood into `Lights` (base dims, neon presence up), window view, background/fog; smooth ~1s lerp that invalidates while transitioning
+- [x] 3.3 Verify: day + dusk screenshots; hotspot click-through works in dusk; reload restores the chosen mood; labels legible in both moods
 
 ## 4. Ambient life
 

@@ -49,6 +49,8 @@ export function Overlay({ onSkip }: OverlayProps) {
   const activeHotspot = useScene((s) => s.activeHotspot)
   const isTransitioning = useScene((s) => s.isTransitioning)
   const back = useScene((s) => s.back)
+  const mood = useScene((s) => s.mood)
+  const toggleMood = useScene((s) => s.toggleMood)
   const card = mode === 'focused' && !isTransitioning && activeHotspot ? cardFor(activeHotspot) : null
 
   useEffect(() => {
@@ -71,6 +73,14 @@ export function Overlay({ onSkip }: OverlayProps) {
           Skip 3D →
         </button>
       )}
+      <button
+        type="button"
+        className="mood-toggle"
+        onClick={toggleMood}
+        aria-label={mood === 'day' ? 'Switch to dusk' : 'Switch to day'}
+      >
+        {mood === 'day' ? '🌙' : '☀️'}
+      </button>
       {card && (
         <div className="focus-card">
           <h2>{card.title}</h2>
