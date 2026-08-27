@@ -1,4 +1,6 @@
+import { useMemo } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
+import { useScene } from '../state/store'
 import { AmbientTicker, DustMotes } from './AmbientLife'
 import { CameraRig } from './CameraRig'
 import { Lights } from './Lights'
@@ -34,11 +36,16 @@ function DevStats() {
 }
 
 export function Experience() {
+  // mount-time backdrop; the mood lerp in Lights takes over from here
+  const backdrop = useMemo(
+    () => (useScene.getState().mood === 'dusk' ? palette.duskBackground : palette.background),
+    [],
+  )
   return (
     <>
-      <color attach="background" args={[palette.background]} />
+      <color attach="background" args={[backdrop]} />
       {/* far range: the portrait aspect-dolly parks the camera ~15 units out */}
-      <fog attach="fog" args={[palette.background, 18, 40]} />
+      <fog attach="fog" args={[backdrop, 18, 40]} />
       {import.meta.env.DEV && <DevStats />}
       <AmbientTicker />
       <DustMotes />

@@ -8,9 +8,9 @@ const MOOD_KEY = 'mood'
 
 const readMood = (): Mood => {
   try {
-    return localStorage.getItem(MOOD_KEY) === 'dusk' ? 'dusk' : 'day'
+    return localStorage.getItem(MOOD_KEY) === 'day' ? 'day' : 'dusk'
   } catch {
-    return 'day'
+    return 'dusk'
   }
 }
 

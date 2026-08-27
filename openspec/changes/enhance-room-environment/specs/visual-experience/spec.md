@@ -14,7 +14,7 @@ The diorama SHALL sit on a visible platform so the surrounding space reads as a 
 - **THEN** it shows sky elements matching the mood (sun/clouds in day, moon/stars at dusk), not a flat colored rectangle
 
 ### Requirement: Mood modes
-The experience SHALL offer a visitor-facing day↔dusk toggle. Dusk SHALL dim the warm base lighting, shift the window light and backdrop, and increase the presence of the neon brand accents; day SHALL restore the cozy daylight look. The choice SHALL persist per visitor across reloads, defaulting to day, and the transition SHALL animate smoothly.
+The experience SHALL offer a visitor-facing day↔dusk toggle. Dusk SHALL dim the warm base lighting, shift the window light and backdrop, and increase the presence of the neon brand accents; day SHALL restore the cozy daylight look. The choice SHALL persist per visitor across reloads, defaulting to dusk, and the transition SHALL animate smoothly.
 
 #### Scenario: Toggling to dusk
 - **WHEN** the visitor activates the mood toggle from day

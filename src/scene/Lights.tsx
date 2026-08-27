@@ -29,6 +29,8 @@ const MOODS = {
 
 export function Lights() {
   const mood = useScene((s) => s.mood)
+  // mount-time values; stable so React prop diffing never snaps the lerp
+  const initial = useMemo(() => MOODS[useScene.getState().mood], [])
   const scene = useThree((s) => s.scene)
   const invalidate = useThree((s) => s.invalidate)
   const ambientRef = useRef<AmbientLight>(null)
@@ -72,15 +74,15 @@ export function Lights() {
 
   return (
     <>
-      <ambientLight ref={ambientRef} intensity={0.3} color="#fff4e6" />
+      <ambientLight ref={ambientRef} intensity={initial.ambient} color="#fff4e6" />
       {/* warm sky + floor-bounce fill keeps the walls from going gray */}
-      <hemisphereLight ref={hemiRef} args={['#fff6ea', '#d8b99a', 0.55]} />
+      <hemisphereLight ref={hemiRef} args={['#fff6ea', '#d8b99a', initial.hemi]} />
       <directionalLight
         ref={dirRef}
         castShadow
         position={[4, 7, 3.5]}
-        intensity={1.8}
-        color="#ffedd8"
+        intensity={initial.dir}
+        color={initial.dirColor}
         shadow-mapSize={[1024, 1024]}
         shadow-camera-left={-5}
         shadow-camera-right={5}
@@ -90,8 +92,8 @@ export function Lights() {
         shadow-camera-far={25}
       />
       {/* brand accents: shadowless washes in the logo colors (design D3) */}
-      <pointLight ref={magentaRef} position={[0, 2, -2.2]} color={palette.neonMagenta} intensity={3.5} distance={4.5} decay={2} />
-      <pointLight ref={purpleRef} position={[-1.8, 1.5, 1.6]} color={palette.neonPurple} intensity={2.5} distance={4.5} decay={2} />
+      <pointLight ref={magentaRef} position={[0, 2, -2.2]} color={palette.neonMagenta} intensity={initial.magenta} distance={4.5} decay={2} />
+      <pointLight ref={purpleRef} position={[-1.8, 1.5, 1.6]} color={palette.neonPurple} intensity={initial.purple} distance={4.5} decay={2} />
       {/* static scene: render the contact shadows once and reuse */}
       <ContactShadows frames={1} position={[0, 0.01, 0]} scale={9} opacity={0.35} blur={2.5} far={2.5} />
     </>
