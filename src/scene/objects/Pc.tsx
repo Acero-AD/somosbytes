@@ -7,13 +7,13 @@ import { KenneyModel } from './KenneyModel'
 
 type GroupProps = ThreeElements['group']
 
-// Display geometry measured from the GLB's glass vertices (x 0..0.393,
-// y 0.092..0.294, glass surface z=-0.062 pre-center/scale): the glass is
-// recessed behind the bezel rim (the chin below sticks out in front and
-// occludes anything lower), so the overlay covers exactly that rect.
-export const SCREEN_CENTER_Y = 0.386
-export const SCREEN_SIZE: [width: number, height: number] = [0.78, 0.4]
-const SCREEN_FACE_Z = -0.015
+// Display quad measured from the GLB vertices: it is a TILTED slab leaning
+// back 0.14 rad — from (y 0.056, z -0.036) to (y 0.287, z -0.068) pre-
+// center/scale, x 0.007..0.386. After centering and x2 scale the quad is
+// 0.758 x 0.467 world, centered at y 0.343 / z ~0 in group space.
+export const SCREEN_CENTER_Y = 0.343
+export const SCREEN_TILT = -0.14
+export const SCREEN_SIZE: [width: number, height: number] = [0.755, 0.465]
 
 // drei Html in transform mode maps CSS px to world units at
 // (distanceFactor || 10) / 400 = 1/40; UI renders at 2x px for sharpness.
@@ -25,12 +25,17 @@ export function Pc(props: GroupProps) {
   return (
     <group {...props}>
       <KenneyModel model="computerScreen" />
-      <mesh position={[0, SCREEN_CENTER_Y, SCREEN_FACE_Z]}>
+      <mesh position={[0, SCREEN_CENTER_Y, 0.004]} rotation={[SCREEN_TILT, 0, 0]}>
         <planeGeometry args={SCREEN_SIZE} />
         <meshBasicMaterial color={palette.screenGlow} />
       </mesh>
       {pcActive && (
-        <Html transform position={[0, SCREEN_CENTER_Y, SCREEN_FACE_Z + 0.004]} scale={SCREEN_UI_SCALE}>
+        <Html
+          transform
+          position={[0, SCREEN_CENTER_Y, 0.008]}
+          rotation={[SCREEN_TILT, 0, 0]}
+          scale={SCREEN_UI_SCALE}
+        >
           <ScreenUI />
         </Html>
       )}

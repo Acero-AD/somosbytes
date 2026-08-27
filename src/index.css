@@ -243,8 +243,8 @@ body:has(.app) {
   display: flex;
   flex-direction: column;
   width: 1640px;
-  /* matches the monitor glass aspect (0.78 x 0.40 world) */
-  height: 840px;
+  /* matches the tilted display quad aspect (0.755 x 0.465 world) */
+  height: 1010px;
   overflow: hidden;
   background: linear-gradient(160deg, #bfe4d6 0%, #a5c9e8 55%, #d9c3e8 100%);
   color: #2f3a36;

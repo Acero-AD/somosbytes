@@ -20,7 +20,8 @@ export const OVERVIEW_POSE: CameraPose = {
 export const HOTSPOTS = {
   pc: {
     label: 'Projects',
-    pose: { position: [0, 1.156, -1.66], target: [0, 1.156, -2.64] },
+    // along the tilted display normal (0.14 rad) for a head-on zoom
+    pose: { position: [0, 1.25, -1.63], target: [0, 1.11, -2.62] },
     labelOffset: [0, 0.78, 0],
   },
   magazines: {
