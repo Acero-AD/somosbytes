@@ -7,8 +7,8 @@
 
 ## 2. Neon lighting
 
-- [ ] 2.1 Add two shadowless brand-colored point lights to `Lights.tsx` (desk + lounge corners), intensity tuned by screenshot against the warm base
-- [ ] 2.2 Create `scene/objects/LedStrip.tsx` (emissive bar) and place under the desk front edge and along the back-wall/floor seam; verify glow by screenshot
+- [x] 2.1 Add two shadowless brand-colored point lights to `Lights.tsx` (desk + lounge corners), intensity tuned by screenshot against the warm base
+- [x] 2.2 Create `scene/objects/LedStrip.tsx` (emissive bar) and place under the desk front edge and along the back-wall/floor seam; verify glow by screenshot
 
 ## 3. Techie props
 

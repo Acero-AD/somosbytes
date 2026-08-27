@@ -1,4 +1,5 @@
 import { ContactShadows } from '@react-three/drei'
+import { palette } from './palette'
 
 export function Lights() {
   return (
@@ -19,6 +20,9 @@ export function Lights() {
         shadow-camera-near={1}
         shadow-camera-far={25}
       />
+      {/* brand accents: shadowless washes in the logo colors (design D3) */}
+      <pointLight position={[0, 2, -2.2]} color={palette.neonMagenta} intensity={3.5} distance={4.5} decay={2} />
+      <pointLight position={[-1.8, 1.5, 1.6]} color={palette.neonPurple} intensity={2.5} distance={4.5} decay={2} />
       {/* static scene: render the contact shadows once and reuse */}
       <ContactShadows frames={1} position={[0, 0.01, 0]} scale={9} opacity={0.35} blur={2.5} far={2.5} />
     </>

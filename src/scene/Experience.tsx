@@ -11,6 +11,7 @@ import { Phone } from './objects/Phone'
 import { WallPoster } from './objects/WallPoster'
 import { FakeWindow } from './objects/FakeWindow'
 import { LogoPoster } from './objects/LogoPoster'
+import { LedStrip } from './objects/LedStrip'
 import { palette } from './palette'
 
 // Kenney desk top (0.384 * KENNEY_SCALE).
@@ -78,6 +79,8 @@ export function Experience() {
       <KenneyModel model="plantSmall1" position={[-2.75, 0, 1.55]} castShadow={false} />
       <FakeWindow position={[-1.3, 1.7, -2.89]} />
       <LogoPoster position={[0, 2.15, -2.88]} />
+      <LedStrip length={1.42} color={palette.neonMagenta} position={[0, 0.71, -2.17]} />
+      <LedStrip length={5.9} color={palette.neonPurple} position={[0, 0.035, -2.86]} />
       <WallPoster color={palette.mint} position={[1.35, 1.85, -2.89]} />
       <WallPoster color={palette.blush} position={[2.05, 1.65, -2.89]} width={0.4} height={0.5} />
       <WallPoster color={palette.sky} position={[-2.89, 1.75, 0.6]} rotation={[0, Math.PI / 2, 0]} width={0.55} height={0.42} />
