@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { useGLTF } from '@react-three/drei'
 import type { ThreeElements } from '@react-three/fiber'
 import { Box3, Mesh, Vector3 } from 'three'
+import type { MeshStandardMaterial } from 'three'
 import { asset } from '../../utils/asset'
 
 type GroupProps = ThreeElements['group']
@@ -45,11 +46,13 @@ interface KenneyModelProps extends Omit<GroupProps, 'scale'> {
   model: KenneyModelName
   /** Flat props (rugs) skip the shadow pass — one draw call less per mesh. */
   castShadow?: boolean
-  /** Uniform scale override for props that read wrong at kit scale (e.g., the bear). */
+  /** Uniform scale override for props that read wrong at kit scale. */
   scale?: number
+  /** Recolor the model (materials are cloned so other instances keep theirs). */
+  tint?: string
 }
 
-export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, ...props }: KenneyModelProps) {
+export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, tint, ...props }: KenneyModelProps) {
   const { scene } = useGLTF(url(model))
   const object = useMemo(() => {
     const cloned = scene.clone(true)
@@ -57,13 +60,17 @@ export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, ..
       if (child instanceof Mesh) {
         child.castShadow = castShadow
         child.receiveShadow = true
+        if (tint) {
+          child.material = (child.material as MeshStandardMaterial).clone()
+          ;(child.material as MeshStandardMaterial).color.set(tint)
+        }
       }
     })
     const box = new Box3().setFromObject(cloned)
     const center = box.getCenter(new Vector3())
     cloned.position.set(-center.x, 0, -center.z)
     return cloned
-  }, [scene, castShadow])
+  }, [scene, castShadow, tint])
   return (
     <group {...props} scale={scale}>
       <primitive object={object} />

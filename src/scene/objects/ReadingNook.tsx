@@ -10,7 +10,7 @@ type GroupProps = ThreeElements['group']
 export function ReadingNook(props: GroupProps) {
   return (
     <group {...props}>
-      <KenneyModel model="rugRounded" position={[0.2, 0.002, 0.2]} scale={1.2} castShadow={false} />
+      <KenneyModel model="rugRounded" position={[0.2, 0.002, 0.2]} scale={1.2} castShadow={false} tint={palette.mint} />
       {/* seat cushion lying flat */}
       <KenneyModel model="pillow" position={[0, 0.12, 0]} rotation={[-Math.PI / 2 + 0.06, 0.3, 0]} castShadow={false} />
       {/* open book: two halves in a shallow V, white pages on top */}
