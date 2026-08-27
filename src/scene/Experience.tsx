@@ -17,6 +17,7 @@ import { LogoPoster } from './objects/LogoPoster'
 import { LedStrip } from './objects/LedStrip'
 import { CodeMonitor } from './objects/CodeMonitor'
 import { Printer3d } from './objects/Printer3d'
+import { ReadingNook } from './objects/ReadingNook'
 import { ArcadeMachine } from './objects/ArcadeMachine'
 import { palette } from './palette'
 
@@ -88,7 +89,7 @@ export function Experience() {
 
       {/* decoration — placed with air gap around every hotspot hit box */}
       <KenneyModel model="loungeChair" position={[-1.15, 0, 2.1]} rotation={[0, 0.55, 0]} />
-      <KenneyModel model="pillow" position={[-1.22, 0.5, 1.98]} rotation={[-0.3, 0.55, 0]} castShadow={false} />
+      <ReadingNook position={[0.8, 0, 1.15]} rotation={[0, -0.4, 0]} />
       <KenneyModel model="coatRackStanding" position={[2.75, 0, -1.3]} />
       <KenneyModel model="rugDoormat" position={[1.3, 0.002, 2.6]} rotation={[0, 0.15, 0]} castShadow={false} />
       <KenneyModel model="pottedPlant" position={[-2.68, 0, 1.5]} scale={3} />
