@@ -88,11 +88,10 @@ export function Experience() {
 
       {/* decoration — placed with air gap around every hotspot hit box */}
       <KenneyModel model="loungeChair" position={[-1.15, 0, 2.1]} rotation={[0, 0.55, 0]} />
-      <KenneyModel model="bear" position={[-1.2, 0.28, 2.1]} rotation={[0, 0.7, 0]} scale={1.3} castShadow={false} />
-      <KenneyModel model="pillow" position={[-1.45, 0.45, 2.3]} rotation={[-0.35, 0.6, 0]} castShadow={false} />
+      <KenneyModel model="pillow" position={[-0.92, 0.04, 1.5]} rotation={[-1.25, 0.35, 0]} castShadow={false} />
       <KenneyModel model="coatRackStanding" position={[2.75, 0, -1.3]} />
       <KenneyModel model="rugDoormat" position={[1.3, 0.002, 2.6]} rotation={[0, 0.15, 0]} castShadow={false} />
-      <KenneyModel model="plantSmall1" position={[-2.75, 0, 1.55]} castShadow={false} />
+      <KenneyModel model="pottedPlant" position={[-2.68, 0, 1.5]} scale={3} />
       <FakeWindow position={[-1.3, 1.7, -2.89]} />
       <LogoPoster position={[0, 2.15, -2.88]} />
       <LedStrip length={2.86} color={palette.neonMagenta} position={[0, 0.71, -2.17]} />

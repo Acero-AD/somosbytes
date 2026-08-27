@@ -20,7 +20,7 @@ export const OVERVIEW_POSE: CameraPose = {
 export const HOTSPOTS = {
   pc: {
     label: 'Projects',
-    pose: { position: [0, 1.11, -1.45], target: [0, 1.11, -2.51] },
+    pose: { position: [0, 1.156, -1.66], target: [0, 1.156, -2.64] },
     labelOffset: [0, 0.78, 0],
   },
   magazines: {

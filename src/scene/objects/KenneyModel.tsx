@@ -29,7 +29,6 @@ const MODEL_NAMES = [
   'bookcaseOpenLow',
   'loungeChair',
   'pillow',
-  'bear',
   'coatRackStanding',
   'laptop',
   'sideTable',

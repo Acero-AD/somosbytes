@@ -7,12 +7,13 @@ import { KenneyModel } from './KenneyModel'
 
 type GroupProps = ThreeElements['group']
 
-// Display center height above the group origin (which sits on the desk top).
-// The Kenney computerScreen model has no separate screen-face mesh, so our
-// emissive plane (and the Html desktop) sits just in front of its bezel.
-export const SCREEN_CENTER_Y = 0.34
-export const SCREEN_SIZE: [width: number, height: number] = [0.62, 0.36]
-const SCREEN_FACE_Z = 0.115
+// Display geometry measured from the GLB's glass vertices (x 0..0.393,
+// y 0.092..0.294, glass surface z=-0.062 pre-center/scale): the glass is
+// recessed behind the bezel rim (the chin below sticks out in front and
+// occludes anything lower), so the overlay covers exactly that rect.
+export const SCREEN_CENTER_Y = 0.386
+export const SCREEN_SIZE: [width: number, height: number] = [0.78, 0.4]
+const SCREEN_FACE_Z = -0.015
 
 // drei Html in transform mode maps CSS px to world units at
 // (distanceFactor || 10) / 400 = 1/40; UI renders at 2x px for sharpness.
@@ -29,7 +30,7 @@ export function Pc(props: GroupProps) {
         <meshBasicMaterial color={palette.screenGlow} />
       </mesh>
       {pcActive && (
-        <Html transform position={[0, SCREEN_CENTER_Y, SCREEN_FACE_Z + 0.006]} scale={SCREEN_UI_SCALE}>
+        <Html transform position={[0, SCREEN_CENTER_Y, SCREEN_FACE_Z + 0.004]} scale={SCREEN_UI_SCALE}>
           <ScreenUI />
         </Html>
       )}
