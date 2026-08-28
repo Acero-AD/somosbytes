@@ -14,20 +14,6 @@ export const portfolio: Portfolio = {
       url: 'https://scribe.somosbytes.es/',
       icon: '/icons/scribe.svg',
     },
-    {
-      id: 'project-two',
-      title: 'Project Two', // TODO: real project
-      description: 'Placeholder project description. Replace me.',
-      url: 'https://github.com/Acero-AD',
-      icon: '/icons/project-two.svg',
-    },
-    {
-      id: 'project-three',
-      title: 'Project Three', // TODO: real project
-      description: 'Placeholder project description. Replace me.',
-      url: 'https://github.com/Acero-AD',
-      icon: '/icons/project-three.svg',
-    },
   ],
   substackUrl: 'https://somosbytes.substack.com',
   cvPdfPath: '/cv/diego-acero-cv.pdf', // placeholder file — drop the real PDF over it
