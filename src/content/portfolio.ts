@@ -8,11 +8,11 @@ export const portfolio: Portfolio = {
   tagline: 'Software engineer — somosbytes',
   projects: [
     {
-      id: 'project-one',
-      title: 'Project One', // TODO: real project
-      description: 'Placeholder project description. Replace me.',
-      url: 'https://github.com/Acero-AD',
-      icon: '/icons/project-one.svg',
+      id: 'scribe',
+      title: 'The Scribe',
+      description: 'A side project living at scribe.somosbytes.es.', // TODO: one-liner about what it does
+      url: 'https://scribe.somosbytes.es/',
+      icon: '/icons/scribe.svg',
     },
     {
       id: 'project-two',
