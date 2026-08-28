@@ -10,7 +10,7 @@ export const portfolio: Portfolio = {
     {
       id: 'scribe',
       title: 'The Scribe',
-      description: 'A side project living at scribe.somosbytes.es.', // TODO: one-liner about what it does
+      description: 'A tracking app for writers. Have you written today? Have you posted this week? Straight to the point.',
       url: 'https://scribe.somosbytes.es/',
       icon: '/icons/scribe.svg',
     },
