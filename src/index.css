@@ -105,6 +105,10 @@ body:has(.app) {
   cursor: pointer;
 }
 
+.overlay-dusk .skip-link {
+  color: rgba(251, 246, 238, 0.85);
+}
+
 .loader-skip {
   min-height: 44px;
   padding: 0 16px;

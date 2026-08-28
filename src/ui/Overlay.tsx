@@ -62,7 +62,7 @@ export function Overlay({ onSkip }: OverlayProps) {
   }, [back])
 
   return (
-    <div className="overlay">
+    <div className={mood === 'dusk' ? 'overlay overlay-dusk' : 'overlay'}>
       {mode !== 'overview' && (
         <button type="button" className="back-button" onClick={back}>
           ← Back
