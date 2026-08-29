@@ -6,7 +6,7 @@ The arcade cabinet is pure set dressing today — a fake shimmer pretending a ga
 
 ## What Changes
 
-- The arcade machine becomes the fifth hotspot: clicking it flies the camera face-on to the cabinet screen, with a floating label chip like the other hotspots.
+- The arcade machine becomes the fifth hotspot, but a hidden one: clicking it flies the camera face-on to the cabinet screen, with no label chip and no hover highlight — visitors discover it by curiosity.
 - A playable Snake game renders on the cabinet screen (CanvasTexture on the existing screen plane — retro raster look, brand-palette snake/food, replaces the shimmer planes while zoomed in).
 - Attract mode: when not being played, the screen shows the idle shimmer plus a blinking `PRESS START`; the game starts on click/keypress once focused.
 - Controls: arrow keys / WASD on desktop; an on-screen d-pad (DOM overlay) on touch devices.
@@ -23,7 +23,7 @@ The arcade cabinet is pure set dressing today — a fake shimmer pretending a ga
 
 ### Modified Capabilities
 
-- `room-navigation`: the hotspot set grows to five (arcade added), and the "arriving at the PC promotes to screen mode" requirement generalizes to interactive hotspots (pc, arcade).
+- `room-navigation`: the hotspot set grows to five (arcade added), the "arriving at the PC promotes to screen mode" requirement generalizes to interactive hotspots (pc, arcade), and the label/hover-affordance requirements scope to the four portfolio-section hotspots (the arcade easter egg shows neither).
 - `visual-experience`: the arcade screen requirement changes from pure decor shimmer to an interactive surface with an attract state; draw-call accounting notes the shimmer planes are replaced by a single textured plane.
 
 ## Impact

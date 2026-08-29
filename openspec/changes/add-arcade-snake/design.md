@@ -30,8 +30,8 @@ An `ArcadeScreen` component inside the cabinet: while `status === 'running'`, ea
 **D4 — Input: buffered directions, mode-gated listeners.**
 A window `keydown` listener mounts only while in the arcade's `screen` mode: arrows/WASD map to directions, `preventDefault` on handled keys, reversals into the neck rejected, up to two queued turns per tick (classic input buffering so fast corners register). Any direction/start input in `attract`/`over` starts a fresh run — one affordance, matching `PRESS START`. The d-pad is four DOM buttons in `Overlay.tsx` (≥44px, `pointerdown` + `stopPropagation`/`onPointerDown` guard exactly like `.screen-ui`), calling `engine.setDirection()` directly.
 
-**D5 — Hotspot wiring.**
-New `arcade` entry in `HOTSPOTS` with a head-on pose along the screen's +x normal (screen center world ≈ `[-2.37, 1.14, -1.95]`; starting guess `position [-1.45, 1.2, -1.95]`, tuned with the dev pose logger) and a label chip (text: **"Arcade"**) anchored above the marquee. The cabinet gets an invisible oversized hit box (the established `visible={false}` mesh pattern) wrapped in the existing `Hotspot` component in `Experience.tsx`. Leaving (back/Escape/click-outside) resets the engine to `attract` via an effect watching the store.
+**D5 — Hotspot wiring: a silent hotspot.**
+New `arcade` entry in `HOTSPOTS` with a head-on pose along the screen's +x normal (screen center world ≈ `[-2.37, 1.14, -1.95]`). The cabinet gets an invisible oversized hit box (the established `visible={false}` mesh pattern) wrapped in the existing `Hotspot` component in `Experience.tsx`, passed a new `silent` prop: no label chip, no hover highlight or pulse — only the pointer cursor changes, a deliberate whisper-level hint (decided with Diego: the game is an easter egg discovered by curiosity, not signposted). Leaving (back/Escape/click-outside) resets the engine to `attract` via an effect watching the store.
 
 **D6 — High score: `localStorage` key `snakeHighScore`.**
 Same guarded read/write shape as the `mood` preference; failures degrade to session-only. Drawn as `HI ####` in the canvas corner during attract and runs.
@@ -42,7 +42,7 @@ Same guarded read/write shape as the `mood` preference; failures degrade to sess
 - [D-pad taps leaking into the 3D scene] → Apply the ScreenUI lesson from day one: `stopPropagation` on `pointerdown`/`click`; verify by tapping the d-pad over hotspot silhouettes.
 - [Keyboard listener conflicts] → Escape stays "leave" (dying ≠ exiting); handled keys are gated to arcade `screen` mode so nothing changes elsewhere.
 - [Per-tick texture uploads] → 176×136 RGBA ≈ 96 KB every ~110 ms only while playing; negligible, but verified in the perf pass alongside the draw-call count.
-- [Label crowding in the back-left corner (CV frame chip is nearby)] → Verify overview label layout at desktop + portrait widths; nudge `labelOffset` as done for the phone chip.
+- [Zero affordances could make the game undiscoverable] → Accepted on purpose (easter-egg nature); the attract screen's blinking `PRESS START` visible from overview is the organic invitation, and the pointer cursor still changes on hover.
 - [Hidden-tab resume feels abrupt] → Resume paused (status `paused`, prompt "resume" on the canvas) rather than instantly ticking; a single input continues the run.
 
 ## Migration Plan

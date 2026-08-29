@@ -31,6 +31,7 @@ function DevStats() {
     ;(window as unknown as Record<string, unknown>).__glInfo = {
       calls: gl.info.render.calls,
       triangles: gl.info.render.triangles,
+      frame: gl.info.render.frame,
     }
   })
   return null
@@ -106,6 +107,7 @@ export function Experience() {
       <Printer3d position={[-2.66, 0.77, -0.1]} rotation={[0, Math.PI / 2 - 0.2, 0]} />
       <Hotspot
         id="arcade"
+        silent
         position={[-2.62, 0, -1.95]}
         rotation={[0, Math.PI / 2, 0]}
         hitSize={[0.7, 1.8, 0.65]}

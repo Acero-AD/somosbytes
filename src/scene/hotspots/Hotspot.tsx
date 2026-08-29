@@ -15,12 +15,14 @@ interface HotspotProps extends Omit<GroupProps, 'id'> {
   hitSize: [number, number, number]
   /** Hit box center relative to the group origin. */
   hitOffset?: [number, number, number]
+  /** Easter-egg mode: no label chip, no hover highlight/pulse — only the pointer cursor changes. */
+  silent?: boolean
 }
 
 const HIGHLIGHT = new Color('#ffb347')
 const BLACK = new Color('#000000')
 
-export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props }: HotspotProps) {
+export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], silent = false, children, ...props }: HotspotProps) {
   const groupRef = useRef<Group>(null)
   const [hovered, setHovered] = useState(false)
   const enabled = useScene((s) => s.mode === 'overview' && !s.isTransitioning)
@@ -31,6 +33,7 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
   const highlightables = useMemo(() => new Set<MeshStandardMaterial>(), [])
 
   useEffect(() => {
+    if (silent) return
     const group = groupRef.current
     if (!group) return
     group.traverse((child) => {
@@ -40,32 +43,41 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
       highlightables.add(cloned)
     })
     return () => highlightables.clear()
-  }, [highlightables])
+  }, [highlightables, silent])
 
   const active = hovered && enabled
   const invalidate = useThree((s) => s.invalidate)
 
   // frameloop is "demand": kick rendering when the hover state changes so the
   // highlight shows and the pulse loop below can take over.
-  useEffect(() => invalidate(), [active, invalidate])
+  useEffect(() => {
+    if (!silent) invalidate()
+  }, [active, silent, invalidate])
 
   useEffect(() => {
     if (!active) return
     document.body.style.cursor = 'pointer'
+    return () => {
+      document.body.style.cursor = ''
+    }
+  }, [active])
+
+  useEffect(() => {
+    if (!active || silent) return
     for (const material of highlightables) {
       material.emissive.copy(HIGHLIGHT)
       material.emissiveIntensity = 0.3
     }
     return () => {
-      document.body.style.cursor = ''
       for (const material of highlightables) {
         material.emissive.copy(BLACK)
         material.emissiveIntensity = 1
       }
     }
-  }, [active, highlightables])
+  }, [active, silent, highlightables])
 
   useFrame((state, delta) => {
+    if (silent) return
     const group = groupRef.current
     if (!group) return
     const target = active ? 1.03 + Math.sin(state.clock.elapsedTime * 5) * 0.01 : 1
@@ -96,7 +108,7 @@ export function Hotspot({ id, hitSize, hitOffset = [0, 0, 0], children, ...props
       <mesh visible={false} position={hitOffset}>
         <boxGeometry args={hitSize} />
       </mesh>
-      <HotspotLabel id={id} />
+      {!silent && <HotspotLabel id={id} />}
       {children}
     </group>
   )

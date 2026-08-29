@@ -19,9 +19,10 @@
 
 - [x] 4.1 Keyboard: window `keydown` mounted only in arcade `screen` mode — arrows/WASD steer, `preventDefault` on handled keys, any input starts/restarts from attract/over; Escape still exits via the existing back path
 - [x] 4.2 Touch d-pad in `Overlay.tsx` + `index.css`: shown in arcade `screen` mode on `(pointer: coarse)` devices, ≥44px targets, `stopPropagation` on pointer events, wired to `engine.setDirection()`/start
+- [x] 4.3 Hide the easter egg: `silent` Hotspot prop for the arcade — no label chip, no hover highlight/pulse (pointer cursor only)
 
 ## 5. Verification & docs
 
-- [ ] 5.1 Interaction pass (playwright): focus arcade from overview (click + label), play a run with keyboard, die, restart, Escape/back/click-outside mid-run returns cleanly, d-pad steers on touch emulation without leaking taps
+- [x] 5.1 Interaction pass (playwright): focus arcade by clicking the cabinet from overview (no label exists), play a run with keyboard, die, restart, Escape/back/click-outside mid-run returns cleanly, d-pad steers on touch emulation without leaking taps
 - [ ] 5.2 Render-contract pass: settled attract/game-over renders zero frames beyond ambient rules, hidden tab pauses a run, reduced-motion room stays static while a started run animates, high score survives reload
 - [ ] 5.3 Perf + regression pass: draw calls via `__glInfo` (expect net reduction, budget <180), production build green, fallback page unchanged; update CREDITS/README only if needed

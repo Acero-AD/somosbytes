@@ -2,12 +2,16 @@
 
 ## ADDED Requirements
 
-### Requirement: Arcade cabinet hotspot
-The arcade machine SHALL be a hotspot: focusing it flies the camera face-on to the cabinet screen and promotes mode to `screen` on arrival, and all established return paths (Escape, back button, click-outside) SHALL leave it exactly as they leave the PC.
+### Requirement: Hidden arcade hotspot
+The arcade machine SHALL be a clickable hotspot without the standard discovery affordances: it SHALL show no floating label chip and no hover highlight or pulse (at most the pointer cursor changes). Focusing it SHALL fly the camera face-on to the cabinet screen and promote mode to `screen` on arrival, and all established return paths (Escape, back button, click-outside) SHALL leave it exactly as they leave the PC.
 
 #### Scenario: Focusing the cabinet
-- **WHEN** the visitor clicks or taps the arcade machine (or its label chip) from overview
+- **WHEN** the visitor clicks or taps the arcade machine from overview
 - **THEN** the camera flies to a head-on pose framing the cabinet screen and mode becomes `screen` once the transition rests
+
+#### Scenario: No discovery affordances
+- **WHEN** the visitor views the settled overview or hovers the cabinet
+- **THEN** no label chip is shown for the arcade and no highlight or pulse plays on it
 
 #### Scenario: Leaving mid-run
 - **WHEN** the visitor presses Escape or the back button while a snake run is active
@@ -81,7 +85,7 @@ The best score SHALL persist in `localStorage` (guarded so storage failures degr
 - **THEN** the game still runs and tracks the high score for the current visit only, with no errors surfaced
 
 ### Requirement: Easter-egg scope
-The minigame SHALL remain an easter egg of the 3D experience: the HTML fallback page SHALL NOT reference or embed it, and no portfolio content SHALL depend on it.
+The minigame SHALL remain an easter egg of the 3D experience: discovered by curiosity rather than signposted, never referenced or embedded in the HTML fallback page, and no portfolio content SHALL depend on it.
 
 #### Scenario: Fallback unchanged
 - **WHEN** the visitor uses the classic (fallback) view

@@ -18,11 +18,11 @@ The scene SHALL be governed by a single state machine with modes `overview`, `fo
 - **THEN** `isTransitioning` clears, and if the active hotspot is an interactive-surface hotspot (the PC or the arcade machine), mode promotes to `screen`
 
 ### Requirement: Persistent hotspot labels
-Each hotspot SHALL display a floating label chip naming its section (e.g., "Projects", "Writing", "CV", "Contact", plus the arcade's label), anchored above the object in 3D space. Labels SHALL be visible only while mode is `overview` and no transition is in progress, SHALL play a one-shot entrance animation that comes to rest (no perpetual idle animation, so the idle scene still renders zero frames), and clicking or tapping a label SHALL focus its hotspot.
+Each portfolio-section hotspot SHALL display a floating label chip naming its section ("Projects", "Writing", "CV", "Contact"), anchored above the object in 3D space. The arcade easter-egg hotspot SHALL NOT display a label chip. Labels SHALL be visible only while mode is `overview` and no transition is in progress, SHALL play a one-shot entrance animation that comes to rest (no perpetual idle animation, so the idle scene still renders zero frames), and clicking or tapping a label SHALL focus its hotspot.
 
 #### Scenario: Labels visible in settled overview
 - **WHEN** the camera is at rest in overview
-- **THEN** all five hotspot labels are visible, each anchored above its object
+- **THEN** the four portfolio-section labels are visible, each anchored above its object, and the arcade shows none
 
 #### Scenario: Labels hide when leaving overview
 - **WHEN** a focus transition starts (label, hotspot click, or tap)
@@ -35,3 +35,18 @@ Each hotspot SHALL display a floating label chip naming its section (e.g., "Proj
 #### Scenario: Idle stays render-free
 - **WHEN** the overview has settled and the entrance animation has finished
 - **THEN** no further frames render while the visitor is idle
+
+### Requirement: Hover and touch affordances
+Enabled portfolio-section hotspots SHALL show a hover affordance (highlight + pointer cursor) on pointer devices; the arcade easter-egg hotspot SHALL NOT highlight or pulse on hover (at most the pointer cursor changes). All hotspots SHALL provide enlarged invisible hit areas so touch targets are at least 44px effective size. Section naming is provided by the persistent hotspot labels rather than a hover-only tooltip.
+
+#### Scenario: Hover feedback
+- **WHEN** the pointer moves over an enabled portfolio-section hotspot
+- **THEN** the object highlights and the cursor becomes a pointer; both revert when the pointer leaves
+
+#### Scenario: Easter egg stays quiet on hover
+- **WHEN** the pointer moves over the arcade cabinet in overview
+- **THEN** no highlight or pulse plays on it
+
+#### Scenario: Touch tap focuses directly
+- **WHEN** a touch user taps within a hotspot's enlarged hit area
+- **THEN** the hotspot focuses on first tap without requiring hover
