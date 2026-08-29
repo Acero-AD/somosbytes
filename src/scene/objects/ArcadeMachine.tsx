@@ -1,26 +1,13 @@
-import { useRef } from 'react'
-import { useFrame } from '@react-three/fiber'
 import type { ThreeElements } from '@react-three/fiber'
-import { Mesh } from 'three'
-import type { Group, MeshBasicMaterial } from 'three'
 import { palette } from '../palette'
+import { ArcadeScreen } from './snake/ArcadeScreen'
 
 type GroupProps = ThreeElements['group']
 
-// Upright arcade cabinet with emissive brand-color screen and marquee; the
-// front faces +z of the group. Pure decor (design D7). The game pixels
-// shimmer on the ambient ticker's frames.
+// Upright arcade cabinet with emissive brand-color marquee; the front faces
+// +z of the group. The screen is a live CanvasTexture surface running the
+// snake minigame (attract mode while idle).
 export function ArcadeMachine(props: GroupProps) {
-  const pixelsRef = useRef<Group>(null)
-  useFrame(({ clock }) => {
-    const pixels = pixelsRef.current
-    if (!pixels) return
-    pixels.children.forEach((child, i) => {
-      if (!(child instanceof Mesh)) return
-      const material = child.material as MeshBasicMaterial
-      material.opacity = 0.7 + Math.sin(clock.elapsedTime * 3 + i * 1.7) * 0.3
-    })
-  })
   return (
     <group {...props}>
       <mesh position={[0, 0.75, 0]} castShadow>
@@ -36,24 +23,7 @@ export function ArcadeMachine(props: GroupProps) {
         <planeGeometry args={[0.5, 0.11]} />
         <meshBasicMaterial color={palette.neonMagenta} toneMapped={false} />
       </mesh>
-      {/* screen with a tiny pixel game */}
-      <mesh position={[0, 1.14, 0.251]}>
-        <planeGeometry args={[0.44, 0.34]} />
-        <meshBasicMaterial color="#12081c" />
-      </mesh>
-      <group ref={pixelsRef}>
-        {[
-          { pos: [-0.1, 1.22] as const, color: palette.neonPurple },
-          { pos: [0.02, 1.16] as const, color: palette.neonRed },
-          { pos: [0.12, 1.22] as const, color: palette.neonPurple },
-          { pos: [-0.02, 1.05] as const, color: '#3ddc84' },
-        ].map(({ pos, color }, i) => (
-          <mesh key={i} position={[pos[0], pos[1], 0.253]}>
-            <planeGeometry args={[0.05, 0.05]} />
-            <meshBasicMaterial color={color} toneMapped={false} transparent />
-          </mesh>
-        ))}
-      </group>
+      <ArcadeScreen />
       {/* control deck: slopes down toward the player, everything rides it */}
       <group position={[0, 0.92, 0.3]} rotation={[0.35, 0, 0]}>
         <mesh castShadow>
