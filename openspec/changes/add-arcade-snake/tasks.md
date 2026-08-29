@@ -24,5 +24,5 @@
 ## 5. Verification & docs
 
 - [x] 5.1 Interaction pass (playwright): focus arcade by clicking the cabinet from overview (no label exists), play a run with keyboard, die, restart, Escape/back/click-outside mid-run returns cleanly, d-pad steers on touch emulation without leaking taps
-- [ ] 5.2 Render-contract pass: settled attract/game-over renders zero frames beyond ambient rules, hidden tab pauses a run, reduced-motion room stays static while a started run animates, high score survives reload
+- [x] 5.2 Render-contract pass: settled attract/game-over renders zero frames beyond ambient rules, hidden tab pauses a run, reduced-motion room stays static while a started run animates, high score survives reload
 - [ ] 5.3 Perf + regression pass: draw calls via `__glInfo` (expect net reduction, budget <180), production build green, fallback page unchanged; update CREDITS/README only if needed

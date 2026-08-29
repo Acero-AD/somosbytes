@@ -89,7 +89,9 @@ export function ArcadeScreen() {
 
   useFrame((state, delta) => {
     if (snakeEngine.status === 'running') {
-      accumulator.current += delta * 1000
+      // demand frameloop: after an idle gap the first delta spans the whole
+      // gap — clamp it so a fresh run doesn't fast-forward into a wall
+      accumulator.current += Math.min(delta, 0.12) * 1000
       while (accumulator.current >= TICK_MS) {
         accumulator.current -= TICK_MS
         snakeEngine.tick()
