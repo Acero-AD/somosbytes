@@ -156,3 +156,8 @@ export class SnakeEngine {
 }
 
 export const snakeEngine = new SnakeEngine()
+
+// Dev/e2e hook (optional chain keeps the node test harness happy)
+if (import.meta.env?.DEV && typeof window !== 'undefined') {
+  ;(window as unknown as Record<string, unknown>).__snake = snakeEngine
+}

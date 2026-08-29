@@ -18,7 +18,7 @@
 ## 4. Input
 
 - [x] 4.1 Keyboard: window `keydown` mounted only in arcade `screen` mode — arrows/WASD steer, `preventDefault` on handled keys, any input starts/restarts from attract/over; Escape still exits via the existing back path
-- [ ] 4.2 Touch d-pad in `Overlay.tsx` + `index.css`: shown in arcade `screen` mode on `(pointer: coarse)` devices, ≥44px targets, `stopPropagation` on pointer events, wired to `engine.setDirection()`/start
+- [x] 4.2 Touch d-pad in `Overlay.tsx` + `index.css`: shown in arcade `screen` mode on `(pointer: coarse)` devices, ≥44px targets, `stopPropagation` on pointer events, wired to `engine.setDirection()`/start
 
 ## 5. Verification & docs
 
