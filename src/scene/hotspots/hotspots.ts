@@ -40,6 +40,12 @@ export const HOTSPOTS = {
     // pushed left/front so the chip clears the main monitor on narrow viewports
     labelOffset: [-0.3, 0.28, 0.25],
   },
+  arcade: {
+    label: 'Arcade',
+    // head-on to the cabinet screen (the cabinet faces +x)
+    pose: { position: [-1.45, 1.2, -1.95], target: [-2.37, 1.14, -1.95] },
+    labelOffset: [0, 1.95, 0],
+  },
 } as const satisfies Record<string, HotspotDef>
 
 export type HotspotId = keyof typeof HOTSPOTS

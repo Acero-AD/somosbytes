@@ -6,6 +6,9 @@ export type Mood = 'day' | 'dusk'
 
 const MOOD_KEY = 'mood'
 
+// Hotspots with an interactive surface: arriving promotes focus to `screen`.
+const INTERACTIVE_HOTSPOTS: ReadonlySet<HotspotId> = new Set(['pc', 'arcade'])
+
 const readMood = (): Mood => {
   try {
     return localStorage.getItem(MOOD_KEY) === 'day' ? 'day' : 'dusk'
@@ -44,8 +47,10 @@ export const useScene = create<SceneState>((set, get) => ({
     const { mode, activeHotspot } = get()
     set({
       isTransitioning: false,
-      // reaching the PC promotes focus to the interactive screen
-      mode: mode === 'focused' && activeHotspot === 'pc' ? 'screen' : mode,
+      mode:
+        mode === 'focused' && activeHotspot && INTERACTIVE_HOTSPOTS.has(activeHotspot)
+          ? 'screen'
+          : mode,
     })
   },
   toggleMood: () => {

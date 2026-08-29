@@ -104,7 +104,15 @@ export function Experience() {
       {/* techie corner */}
       <KenneyModel model="sideTable" position={[-2.66, 0, -0.1]} rotation={[0, Math.PI / 2, 0]} castShadow={false} />
       <Printer3d position={[-2.66, 0.77, -0.1]} rotation={[0, Math.PI / 2 - 0.2, 0]} />
-      <ArcadeMachine position={[-2.62, 0, -1.95]} rotation={[0, Math.PI / 2, 0]} />
+      <Hotspot
+        id="arcade"
+        position={[-2.62, 0, -1.95]}
+        rotation={[0, Math.PI / 2, 0]}
+        hitSize={[0.7, 1.8, 0.65]}
+        hitOffset={[0, 0.85, 0.05]}
+      >
+        <ArcadeMachine />
+      </Hotspot>
     </>
   )
 }
