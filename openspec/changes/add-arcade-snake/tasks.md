@@ -7,8 +7,8 @@
 
 ## 2. Game engine
 
-- [ ] 2.1 Implement `src/scene/objects/snake/engine.ts`: pure grid/snake/food logic, fixed tick advance, buffered direction queue with reversal rejection, status machine (`attract | running | paused | over`), score + guarded `snakeHighScore` persistence
-- [ ] 2.2 Verify engine behavior in isolation (eat-and-grow, wall/self death, restart reset, reversal ignored, storage-unavailable fallback) via a quick node/vitest harness or dev-console exercise
+- [x] 2.1 Implement `src/scene/objects/snake/engine.ts`: pure grid/snake/food logic, fixed tick advance, buffered direction queue with reversal rejection, status machine (`attract | running | paused | over`), score + guarded `snakeHighScore` persistence
+- [x] 2.2 Verify engine behavior in isolation (eat-and-grow, wall/self death, restart reset, reversal ignored, storage-unavailable fallback) via a quick node/vitest harness or dev-console exercise
 
 ## 3. Screen rendering
 
