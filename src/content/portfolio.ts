@@ -1,8 +1,6 @@
 import type { Portfolio } from './types'
 
-// TODO(diego): replace every placeholder below with real content.
-// This file is the single source of truth: the 3D scene and the HTML
-// fallback both render from it.
+// Single source of truth: the 3D scene and the HTML fallback both render from it.
 export const portfolio: Portfolio = {
   name: 'Diego Acero',
   tagline: 'Software engineer — somosbytes',
@@ -16,7 +14,7 @@ export const portfolio: Portfolio = {
     },
   ],
   substackUrl: 'https://somosbytes.substack.com',
-  cvPdfPath: '/cv/diego-acero-cv.pdf', // placeholder file — drop the real PDF over it
+  cvPdfPath: '/cv/diego-acero-cv.pdf',
   socials: [
     { label: 'GitHub', url: 'https://github.com/Acero-AD' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/diego-acero-arguelles' },
