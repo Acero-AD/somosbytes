@@ -2,19 +2,19 @@
 
 ## 1. Pin the build environment
 
-- [ ] 1.1 Add `.nvmrc` at the repo root pinning the Node major version (>= 22, satisfying Vite 8 and TypeScript 6)
-- [ ] 1.2 Verify: `nvm use` in a clean shell selects the pinned version, and `npm ci && npm run build` succeeds on it, emitting `dist/` with hashed filenames under `dist/assets/`
+- [x] 1.1 Add `.nvmrc` at the repo root pinning the Node major version (>= 22, satisfying Vite 8 and TypeScript 6)
+- [x] 1.2 Verify: `nvm use` in a clean shell selects the pinned version, and `npm ci && npm run build` succeeds on it, emitting `dist/` with hashed filenames under `dist/assets/`
 
 ## 2. Headers file
 
-- [ ] 2.1 Create `public/_headers` with a `/*` block carrying security headers only — the CSP from design.md, `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy: geolocation=(), camera=(), microphone=()` — and deliberately no `Cache-Control`
-- [ ] 2.2 Add the `/assets/*` block setting `Cache-Control: public, max-age=31536000, immutable`
-- [ ] 2.3 Verify: `npm run build` copies the file to `dist/_headers` verbatim, and the CSP string contains no `unsafe-eval` and no third-party origin
+- [x] 2.1 Create `public/_headers` with a `/*` block carrying security headers only — the CSP from design.md, `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy: geolocation=(), camera=(), microphone=()` — and deliberately no `Cache-Control`
+- [x] 2.2 Add the `/assets/*` block setting `Cache-Control: public, max-age=31536000, immutable`
+- [x] 2.3 Verify: `npm run build` copies the file to `dist/_headers` verbatim, and the CSP string contains no `unsafe-eval` and no third-party origin
 
 ## 3. Public URL metadata
 
-- [ ] 3.1 Add `og:url`, `og:image` (`https://somosbytes.es/branding/logo.jpg`), `og:image:width`/`og:image:height` (1200x1200), and `<link rel="canonical" href="https://somosbytes.es/">` to `index.html`
-- [ ] 3.2 Verify: `npm run build` and confirm the tags survive into `dist/index.html` with absolute URLs, and that no `src/` code or script tag changed
+- [x] 3.1 Add `og:url`, `og:image` (`https://somosbytes.es/branding/logo.jpg`), `og:image:width`/`og:image:height` (1200x1200), and `<link rel="canonical" href="https://somosbytes.es/">` to `index.html`
+- [x] 3.2 Verify: `npm run build` and confirm the tags survive into `dist/index.html` with absolute URLs, and that no `src/` code or script tag changed
 
 ## 4. Deploy procedure doc
 

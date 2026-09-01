@@ -48,7 +48,8 @@ state, oxlint for linting. No CSS framework and no UI kit.
 
 ## Getting started
 
-Node 22 or newer (Vite 8 and TypeScript 6 both require it).
+Node 22 or newer (Vite 8 and TypeScript 6 both require it). The deployed build pins 26, in
+`.nvmrc`.
 
 ```bash
 npm install
