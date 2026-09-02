@@ -14,3 +14,9 @@ Drawn for this project; same license as the repository.
 ## Logo — `public/branding/logo.jpg`
 
 Diego Acero's own avatar artwork; all rights reserved by the author.
+
+## Room screenshot — `public/branding/room.jpg`
+
+A capture of this project's own scene, used as the README image and the link-preview image.
+It therefore contains the Kenney furniture models (CC0) and the author's logo, and inherits
+the terms of both.

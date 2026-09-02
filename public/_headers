@@ -4,8 +4,8 @@
 # Pages applies every matching rule cumulatively, so two blocks both setting
 # Cache-Control would be ambiguous. This block therefore carries security
 # headers ONLY: index.html and the unhashed files copied from public/
-# (/models/*, /branding/*, /cv/*, /icons/*, /robots.txt) keep the platform
-# default, which revalidates — they have stable filenames across deploys, so
+# (/models/*, /branding/*, /cv/*, /icons/*, /robots.txt, /sitemap.xml) keep the
+# platform default, which revalidates — they have stable filenames across deploys, so
 # caching them immutably would strand visitors on old models and a stale CV.
 
 /*
