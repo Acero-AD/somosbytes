@@ -19,11 +19,11 @@
 - [x] 3.1 Replace "Do not enable the SPA / single-page-app 404 fallback" with the actual mechanism — the host infers SPA routing when the output has no top-level `404.html`, so the rule is that `dist/404.html` must exist
 - [x] 3.2 Keep the `base: './'` explanation, which is the reason the fallback is harmful here, and note that it is why the 404 page carries no relative references
 - [x] 3.3 Change the verification bullet from "open `/does-not-exist`" to `curl -I`, so the status code is read rather than inferred from the page looking right
-- [ ] 3.4 Decide whether `DEPLOY.md` should be tracked at all — it is currently in `.git/info/exclude`, so these corrections are working-copy only and no one else can see them
+- [x] 3.4 Decide whether `DEPLOY.md` should be tracked at all — it is currently in `.git/info/exclude`, so these corrections are working-copy only and no one else can see them
 
 ## 4. Post-deploy (Diego, after this lands on `main`)
 
-- [ ] 4.1 `curl -I https://somosbytes.es/does-not-exist` and confirm a real `404` status — a `404.html` served with `200` is still a soft 404 and does not fix the search half of this
-- [ ] 4.2 Confirm `/some/deep/path` renders the styled 404 page rather than a broken portfolio
-- [ ] 4.3 Re-check that `/sitemap.xml` and `/branding/room.jpg` now return their real content, and that a genuinely missing file returns 404
-- [ ] 4.4 Confirm the site root, `?no3d`, and the CV PDF are all unaffected
+- [x] 4.1 `curl -I https://somosbytes.es/does-not-exist` and confirm a real `404` status — a `404.html` served with `200` is still a soft 404 and does not fix the search half of this
+- [x] 4.2 Confirm `/some/deep/path` renders the styled 404 page rather than a broken portfolio
+- [x] 4.3 Re-check that `/sitemap.xml` and `/branding/room.jpg` now return their real content, and that a genuinely missing file returns 404
+- [x] 4.4 Confirm the site root, `?no3d`, and the CV PDF are all unaffected

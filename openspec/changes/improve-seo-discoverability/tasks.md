@@ -49,7 +49,7 @@
 
 ## 6. Post-deploy verification (Diego, after this lands on `main`)
 
-- [ ] 6.1 Fetch the deployed `index.html` with `curl` and confirm the portfolio content is in the raw response
-- [ ] 6.2 Paste the production URL into a preview-rendering service and confirm a large-image card showing the room
-- [ ] 6.3 Run the deployed URL through a structured-data validator and confirm the `Person` is read without errors
-- [ ] 6.4 Confirm `https://somosbytes.es/branding/room.jpg` and `https://somosbytes.es/sitemap.xml` both return 200
+- [x] 6.1 Fetch the deployed `index.html` with `curl` and confirm the portfolio content is in the raw response
+- [x] 6.2 Paste the production URL into a preview-rendering service and confirm a large-image card showing the room
+- [x] 6.3 Run the deployed URL through a structured-data validator and confirm the `Person` is read without errors
+- [x] 6.4 Confirm `https://somosbytes.es/branding/room.jpg` and `https://somosbytes.es/sitemap.xml` both return 200

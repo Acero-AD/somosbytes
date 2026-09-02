@@ -21,4 +21,4 @@
 
 ## 4. Post-deploy (Diego, after this lands on `main`)
 
-- [ ] 4.1 Open the deployed room with the console open and confirm zero CSP violations, closing out the scenario the `static-hosting` spec has been asserting since the deployment change
+- [x] 4.1 Open the deployed room with the console open and confirm zero CSP violations, closing out the scenario the `static-hosting` spec has been asserting since the deployment change
