@@ -5,7 +5,7 @@ projects sit on the PC, the writing on the magazine stack, the CV in the wall fr
 contact details on the phone — click one and the camera flies to it. It is a static site:
 no backend, no tracking, and nothing fetched at runtime from anywhere but its own origin.
 
-![The 3D room in dusk mood, with the Projects, Writing, CV and Contact hotspots labelled](docs/screenshot.jpg)
+![The 3D room in dusk mood, with the Projects, Writing, CV and Contact hotspots labelled](public/branding/room.jpg)
 
 ## The room
 

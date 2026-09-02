@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not found — somosbytes</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#2b2136" />
+    <!--
+      Deliberately self-contained: inline styles, no script, no favicon, no asset references.
+      Cloudflare Pages serves the closest 404.html up the directory tree, so this document is
+      what a visitor at /some/deep/path receives — and the site is built with `base: './'`, so
+      any relative URL here would resolve against /some/deep/ and 404 in turn. Every link is
+      root-absolute for the same reason.
+    -->
+    <style>
+      body {
+        margin: 0;
+        padding: 48px 24px 64px;
+        background: #efe6da;
+        color: #3f3a35;
+        font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 32px;
+      }
+      p.lead {
+        margin: 0 0 32px;
+        color: #6b6259;
+      }
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      a {
+        color: #2f5d50;
+      }
+      a.home {
+        display: inline-block;
+        min-height: 44px;
+        margin-top: 36px;
+        padding: 8px 18px;
+        border-radius: 22px;
+        background: #3f3a35;
+        color: #fbf6ee;
+        font-size: 15px;
+        line-height: 28px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Not found</h1>
+      <p class="lead">There is no page at this address. The room is still where you left it.</p>
+      <ul>
+        <li><a href="/">The portfolio</a></li>
+        <li><a href="https://somosbytes.substack.com">Substack</a></li>
+        <li><a href="/cv/diego-acero-cv.pdf">CV (PDF)</a></li>
+        <li><a href="https://github.com/Acero-AD">GitHub</a></li>
+      </ul>
+      <a class="home" href="/">Back to the room →</a>
+    </main>
+  </body>
+</html>
