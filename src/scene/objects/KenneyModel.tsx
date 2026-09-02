@@ -40,7 +40,13 @@ export type KenneyModelName = (typeof MODEL_NAMES)[number]
 
 const url = (name: KenneyModelName) => asset(`/models/${name}.glb`)
 
-MODEL_NAMES.forEach((name) => useGLTF.preload(url(name)))
+// The Kenney kit ships plain glTF — no Draco, no meshopt — but drei enables both decoders by
+// default. Meshopt then compiles its inline WASM blob, which `script-src 'self'` refuses, and
+// Draco points at gstatic.com, which `connect-src 'self'` would refuse the moment a compressed
+// model appeared. Both flags off: nothing to decode, nothing for the CSP to block.
+const NO_DECODERS = [false, false] as const
+
+MODEL_NAMES.forEach((name) => useGLTF.preload(url(name), ...NO_DECODERS))
 
 interface KenneyModelProps extends Omit<GroupProps, 'scale'> {
   model: KenneyModelName
@@ -54,7 +60,7 @@ interface KenneyModelProps extends Omit<GroupProps, 'scale'> {
 }
 
 export function KenneyModel({ model, castShadow = true, scale = KENNEY_SCALE, tint, ...props }: KenneyModelProps) {
-  const { scene } = useGLTF(url(model))
+  const { scene } = useGLTF(url(model), ...NO_DECODERS)
   const object = useMemo(() => {
     const cloned = scene.clone(true)
     cloned.traverse((child) => {
