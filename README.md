@@ -1,6 +1,6 @@
 # somosbytes
 
-Diego Acero's portfolio, built as a room you look around instead of a page you scroll. The
+My portfolio, built as a room you look around instead of a page you scroll. The
 projects sit on the PC, the writing on the magazine stack, the CV in the wall frame, the
 contact details on the phone — click one and the camera flies to it. It is a static site:
 no backend, no tracking, and nothing fetched at runtime from anywhere but its own origin.
