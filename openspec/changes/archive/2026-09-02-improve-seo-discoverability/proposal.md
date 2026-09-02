@@ -47,10 +47,10 @@ itself.
 
 ### Modified Capabilities
 
-- `html-fallback`: two MODIFIED requirements. "Fallback content parity and semantics" gains
+- `html-fallback`: one MODIFIED requirement — "Fallback content parity and semantics" gains
   the requirement that the content be in the *served* HTML rather than only in the rendered
-  DOM, and the metadata list grows to cover the Twitter card, the descriptive OpenGraph
-  fields, and the structured-data block.
+  DOM — and one ADDED requirement, "Discovery metadata", covering the Twitter card, the
+  descriptive OpenGraph fields, the share image, and the structured-data block.
 - `static-hosting`: one MODIFIED requirement. The cache-policy requirement lists the unhashed
   files copied from `public/`; `/sitemap.xml` joins `/robots.txt` in that list.
 

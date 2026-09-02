@@ -35,6 +35,8 @@ The fallback SHALL render the same content as the 3D scene — name, tagline, al
 - **WHEN** the site is reached through a preview deployment URL or any alternate host
 - **THEN** the canonical link identifies the production origin as the single indexable address
 
+## ADDED Requirements
+
 ### Requirement: Discovery metadata
 `index.html` SHALL carry, in addition to the OpenGraph set, a Twitter card declaration whose type matches the aspect ratio of the share image, together with the card's title, description and image. The OpenGraph set SHALL include `og:site_name`, `og:locale`, and `og:image:alt`. The share image SHALL be a deployed asset on the production origin with a landscape aspect ratio suited to link previews, and its declared `og:image:width` and `og:image:height` MUST match the actual pixel dimensions of that file. The document SHALL carry a `theme-color` matching the default mood of the room, and a `Person` structured-data block in JSON-LD naming the author, their role, the canonical URL, and `sameAs` links to the external profiles listed in the content module. The structured-data block MUST NOT require any relaxation of the site's Content-Security-Policy.
 
