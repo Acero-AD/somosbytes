@@ -1,0 +1,272 @@
+{
+  "viewport": [
+    1280,
+    720
+  ],
+  "dpr": 1,
+  "coldPeak": {
+    "calls": 370,
+    "triangles": 13466
+  },
+  "settledLastFrames": [
+    {
+      "calls": 172,
+      "triangles": 6602
+    },
+    {
+      "calls": 172,
+      "triangles": 6602
+    },
+    {
+      "calls": 172,
+      "triangles": 6602
+    },
+    {
+      "calls": 172,
+      "triangles": 6602
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    }
+  ],
+  "violations": [],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/assets/index-PS3ziLXg.js",
+      "bytes": 195523,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-Bi3kDUrB.css",
+      "bytes": 4969,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/Scene3DApp-CHllF__D.js",
+      "bytes": 1097084,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/environments/studio_small_09_1k.hdr",
+      "bytes": 1615248,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-color.jpg",
+      "bytes": 305286,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-normal.jpg",
+      "bytes": 109426,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-roughness.jpg",
+      "bytes": 237099,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-color.jpg",
+      "bytes": 268326,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-normal.jpg",
+      "bytes": 477782,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-roughness.jpg",
+      "bytes": 134709,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/desk.glb",
+      "bytes": 15048,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerScreen.glb",
+      "bytes": 6404,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerKeyboard.glb",
+      "bytes": 3476,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerMouse.glb",
+      "bytes": 5868,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/chairDesk.glb",
+      "bytes": 39016,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/tableCoffee.glb",
+      "bytes": 8256,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/pottedPlant.glb",
+      "bytes": 7576,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/plantSmall1.glb",
+      "bytes": 8224,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/plantSmall2.glb",
+      "bytes": 12996,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/rugRound.glb",
+      "bytes": 10164,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/rugRounded.glb",
+      "bytes": 10876,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/rugDoormat.glb",
+      "bytes": 13812,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/lampRoundFloor.glb",
+      "bytes": 6600,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/lampRoundTable.glb",
+      "bytes": 6604,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/books.glb",
+      "bytes": 6864,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/bookcaseOpenLow.glb",
+      "bytes": 11520,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/loungeChair.glb",
+      "bytes": 9648,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/pillow.glb",
+      "bytes": 5044,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/coatRackStanding.glb",
+      "bytes": 13288,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/laptop.glb",
+      "bytes": 5540,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/sideTable.glb",
+      "bytes": 8800,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/branding/logo.jpg",
+      "bytes": 267823,
+      "status": 200
+    }
+  ],
+  "loadTiming": {
+    "name": "http://127.0.0.1:4173/",
+    "entryType": "navigation",
+    "startTime": 0,
+    "duration": 42.19999999552965,
+    "navigationId": 9185,
+    "initiatorType": "navigation",
+    "deliveryType": "",
+    "nextHopProtocol": "http/1.1",
+    "renderBlockingStatus": "non-blocking",
+    "contentType": "text/html",
+    "contentEncoding": "",
+    "workerStart": 0,
+    "workerRouterEvaluationStart": 0,
+    "workerCacheLookupStart": 0,
+    "workerMatchedSourceType": "",
+    "workerFinalSourceType": "",
+    "redirectStart": 0,
+    "redirectEnd": 0,
+    "fetchStart": 0.10000000149011612,
+    "domainLookupStart": 0.10000000149011612,
+    "domainLookupEnd": 0.10000000149011612,
+    "connectStart": 0.10000000149011612,
+    "secureConnectionStart": 0,
+    "connectEnd": 0.10000000149011612,
+    "requestStart": 0.5,
+    "responseStart": 1,
+    "firstInterimResponseStart": 0,
+    "finalResponseHeadersStart": 1,
+    "responseEnd": 1.1000000014901161,
+    "transferSize": 4217,
+    "encodedBodySize": 3917,
+    "decodedBodySize": 3917,
+    "responseStatus": 200,
+    "serverTiming": [],
+    "unloadEventStart": 2.100000001490116,
+    "unloadEventEnd": 2.100000001490116,
+    "domInteractive": 38.19999999552965,
+    "domContentLoadedEventStart": 41.899999998509884,
+    "domContentLoadedEventEnd": 41.899999998509884,
+    "domComplete": 42.19999999552965,
+    "loadEventStart": 42.19999999552965,
+    "loadEventEnd": 42.19999999552965,
+    "type": "reload",
+    "redirectCount": 0,
+    "activationStart": 0,
+    "criticalCHRestart": 0,
+    "notRestoredReasons": null,
+    "confidence": {
+      "randomizedTriggerRate": 0.4994798,
+      "value": "low"
+    }
+  },
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+  "browser": "152.0.7977.83",
+  "reducedMotionIdleFrames": 0
+}
