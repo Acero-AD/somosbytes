@@ -1,3 +1,4 @@
+import { BeveledBoxGeometry } from './BeveledBoxGeometry'
 import type { ThreeElements } from '@react-three/fiber'
 import { palette } from '../palette'
 import { ArcadeScreen } from './snake/ArcadeScreen'
@@ -11,12 +12,12 @@ export function ArcadeMachine(props: GroupProps) {
   return (
     <group {...props}>
       <mesh position={[0, 0.75, 0]} castShadow>
-        <boxGeometry args={[0.55, 1.5, 0.5]} />
+        <BeveledBoxGeometry args={[0.55, 1.5, 0.5]} />
         <meshStandardMaterial color={palette.charcoal} roughness={0.7} />
       </mesh>
       {/* marquee */}
       <mesh position={[0, 1.57, 0]} castShadow>
-        <boxGeometry args={[0.57, 0.16, 0.52]} />
+        <BeveledBoxGeometry args={[0.57, 0.16, 0.52]} />
         <meshStandardMaterial color={palette.charcoal} roughness={0.7} />
       </mesh>
       <mesh position={[0, 1.57, 0.262]}>
@@ -27,7 +28,7 @@ export function ArcadeMachine(props: GroupProps) {
       {/* control deck: slopes down toward the player, everything rides it */}
       <group position={[0, 0.92, 0.3]} rotation={[0.35, 0, 0]}>
         <mesh castShadow>
-          <boxGeometry args={[0.55, 0.06, 0.26]} />
+          <BeveledBoxGeometry args={[0.55, 0.06, 0.26]} />
           <meshStandardMaterial color={palette.wood} roughness={0.8} />
         </mesh>
         {[

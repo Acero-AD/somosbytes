@@ -1,3 +1,4 @@
+import { BeveledBoxGeometry } from './BeveledBoxGeometry'
 import type { ThreeElements } from '@react-three/fiber'
 import { palette } from '../palette'
 
@@ -15,7 +16,7 @@ export function WallPoster({ color, width = 0.5, height = 0.65, ...props }: Wall
   return (
     <group {...props}>
       <mesh>
-        <boxGeometry args={[width + 0.06, height + 0.06, 0.03]} />
+        <BeveledBoxGeometry args={[width + 0.06, height + 0.06, 0.03]} />
         <meshStandardMaterial color={palette.wood} roughness={0.8} />
       </mesh>
       <mesh position={[0, 0, 0.016]}>

@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber'
 import type { ThreeElements } from '@react-three/fiber'
 import type { Mesh } from 'three'
 import { palette } from '../palette'
-import { KenneyModel } from './KenneyModel'
+import { MonitorHousing } from './MonitorHousing'
 import { SCREEN_CENTER_Y, SCREEN_SIZE, SCREEN_TILT } from './Pc'
 
 type GroupProps = ThreeElements['group']
@@ -26,7 +26,7 @@ export function CodeMonitor(props: GroupProps) {
   })
   return (
     <group {...props}>
-      <KenneyModel model="computerScreen" />
+      <MonitorHousing centerY={SCREEN_CENTER_Y} tilt={SCREEN_TILT} />
       <group position={[0, SCREEN_CENTER_Y, 0.004]} rotation={[SCREEN_TILT, 0, 0]}>
         <mesh>
           <planeGeometry args={SCREEN_SIZE} />
