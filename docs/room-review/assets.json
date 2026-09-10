@@ -1,0 +1,1310 @@
+{
+  "date": "2026-09-09",
+  "extractionTool": "v22.17.0",
+  "assets": [
+    {
+      "path": "public/models/bookcaseOpenLow.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 11520,
+      "sha256": "6d4d625faf977a2dbf155f1313cd32c6310e463114a1cd4c08cb9f80a5fb1d75",
+      "triangles": 184,
+      "primitives": 1,
+      "materials": 1,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/books.glb",
+      "status": "active",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 6864,
+      "sha256": "b8dc56e5d29f6fc1f4727fccb1b9642627fee9942c48060a00034e98df02701c",
+      "triangles": 62,
+      "primitives": 4,
+      "materials": 4,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24"
+    },
+    {
+      "path": "public/models/chairDesk.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 39016,
+      "sha256": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6",
+      "triangles": 588,
+      "primitives": 3,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/coatRackStanding.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 13288,
+      "sha256": "d8231c22dab63ceb9fc8678f6c8ceafc62afa8726b51a73b4ce349043d3cdc91",
+      "triangles": 190,
+      "primitives": 1,
+      "materials": 1,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/computerKeyboard.glb",
+      "status": "active",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 3476,
+      "sha256": "9d9135789de2120e9f41ce3f0a56dd1b15f40adcc7888739bb842a2d820da322",
+      "triangles": 32,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24"
+    },
+    {
+      "path": "public/models/computerMouse.glb",
+      "status": "active",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 5868,
+      "sha256": "d3ad1a923f0f7707ef367bb969eb94c9076e211c98c830ba52e133fadc5cdfc0",
+      "triangles": 71,
+      "primitives": 1,
+      "materials": 1,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24"
+    },
+    {
+      "path": "public/models/computerScreen.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 6404,
+      "sha256": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643",
+      "triangles": 72,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/desk.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 15048,
+      "sha256": "0164fe828f028b321730fb8c74502e353583f751be74da1682d42fff7d3c5a42",
+      "triangles": 198,
+      "primitives": 3,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/lampRoundFloor.glb",
+      "status": "active",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 6600,
+      "sha256": "50fe1b5b588edf15bfa9cc880f71a02a4fda6036350b24733d0ef4de5cc5e908",
+      "triangles": 76,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24"
+    },
+    {
+      "path": "public/models/lampRoundTable.glb",
+      "status": "active",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 6604,
+      "sha256": "75bb644caaa3da003b4fcad7a931722dd61cd2858aab70cf660021d5061fa1b2",
+      "triangles": 76,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24"
+    },
+    {
+      "path": "public/models/laptop.glb",
+      "status": "active",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 5540,
+      "sha256": "5fa8a1f4a71ab8d82ef64da77a6973ffd350c6d4557516069a4ffd4bb8d808af",
+      "triangles": 68,
+      "primitives": 3,
+      "materials": 3,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24"
+    },
+    {
+      "path": "public/models/loungeChair.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 9648,
+      "sha256": "ddfe6bc4b3451bca61666d7b614552d6ed2a03d82fc76244b72ae3155874dc6c",
+      "triangles": 128,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/pillow.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 5044,
+      "sha256": "6fae7c190d0b676ef3efd35e5178cef21dffb5c80e1257d8b537ad424da0e5f6",
+      "triangles": 50,
+      "primitives": 1,
+      "materials": 1,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/plantSmall1.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 8224,
+      "sha256": "2b9c022feb47be857b2c4fdc29f36522766ba9b70c578c31d7c05d71b4377d15",
+      "triangles": 102,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/plantSmall2.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 12996,
+      "sha256": "d7c8ff42c66dd4f9238a73570549813d1ca6c5f6f661d7af9cb764c4fce314b9",
+      "triangles": 158,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/pottedPlant.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 7576,
+      "sha256": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15",
+      "triangles": 60,
+      "primitives": 3,
+      "materials": 3,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/rugDoormat.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 13812,
+      "sha256": "bd888e41853342cdc0d34d3f09b99cedc50a144f47b514943b65cdb9a2cfd802",
+      "triangles": 204,
+      "primitives": 1,
+      "materials": 1,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/rugRound.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 10164,
+      "sha256": "c4cdc8f51ed2dbfb853b147521ed40e995307392fd3b19045b2203ea50f376db",
+      "triangles": 188,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/rugRounded.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 10876,
+      "sha256": "2ef5cc634bb1060a1a5774cfcaf6e11c235791c99d6b59da5fdbc09edfb95a68",
+      "triangles": 204,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/sideTable.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 8800,
+      "sha256": "8227810584f7d37582e4e9ec821c56f1dc54b99c88a8dc74242ea3b7402bc472",
+      "triangles": 118,
+      "primitives": 2,
+      "materials": 2,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/models/tableCoffee.glb",
+      "status": "retired",
+      "source": "https://kenney.nl/assets/furniture-kit",
+      "license": "CC0-1.0",
+      "bytes": 8256,
+      "sha256": "e38bea760fbd514efbb75528d09b4752c91af44677bbb97e6d4386c263525179",
+      "triangles": 124,
+      "primitives": 1,
+      "materials": 1,
+      "images": 0,
+      "extensionsUsed": [
+        "KHR_materials_unlit"
+      ],
+      "extensionsRequired": [],
+      "generator": "UniGLTF-1.24",
+      "retiredAtStage": "realistic-room-in-stages"
+    },
+    {
+      "path": "public/textures/room/wood_floor-color.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/wood_floor",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_diff_1k.jpg",
+      "sourceMd5": "b7e927d2bf2f8f103820ff3890c8407c",
+      "sha256": "642df1368b8863097087d5cbdba62287aa5b01c73d7033e41091ab663d49dd83",
+      "bytes": 305286,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80",
+      "tool": "sips-316",
+      "date": "2026-09-09"
+    },
+    {
+      "path": "public/textures/room/wood_floor-normal.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/wood_floor",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg",
+      "sourceMd5": "620f174d2c09b579c5d02d37b2106668",
+      "sha256": "d4456215cbb6187b4833d43a6b9ce5edb9d4f396b4f46676ae01968f1285ce0b",
+      "bytes": 109426,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80",
+      "tool": "sips-316",
+      "date": "2026-09-09"
+    },
+    {
+      "path": "public/textures/room/wood_floor-roughness.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/wood_floor",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_rough_1k.jpg",
+      "sourceMd5": "36146634f1dbd1bc30cd071857584c10",
+      "sha256": "26e5af7a05718a58e5b487f7333a6c1b0ab2bfd8ec1602b133053156e473f3d7",
+      "bytes": 237099,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80",
+      "tool": "sips-316",
+      "date": "2026-09-09"
+    },
+    {
+      "path": "public/textures/room/plastered_wall-color.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/plastered_wall",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plastered_wall/plastered_wall_diff_1k.jpg",
+      "sourceMd5": "9f64cd14ded4938e64ab6c6bb3de3c19",
+      "sha256": "560e4f1c03ac22027991d8e3b85f02868dc99e9d1399dbfb2284a77a5db82a00",
+      "bytes": 268326,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80",
+      "tool": "sips-316",
+      "date": "2026-09-09"
+    },
+    {
+      "path": "public/textures/room/plastered_wall-normal.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/plastered_wall",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plastered_wall/plastered_wall_nor_gl_1k.jpg",
+      "sourceMd5": "e3e00c5d9a589621bf3cc541d9fb7d81",
+      "sha256": "d1ebb037390fda41cd6fe5c0c00abcd459bf104b687dad2edeafebe0851c2e2d",
+      "bytes": 477782,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80",
+      "tool": "sips-316",
+      "date": "2026-09-09"
+    },
+    {
+      "path": "public/textures/room/plastered_wall-roughness.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/plastered_wall",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plastered_wall/plastered_wall_rough_1k.jpg",
+      "sourceMd5": "5c5f8e9c43bf183b45274575a7eac318",
+      "sha256": "70f62b393c72fef169ab9ce0bf7d2c61bb42ef83fd6f986b350f1235ec271dfd",
+      "bytes": 134709,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80",
+      "tool": "sips-316",
+      "date": "2026-09-09"
+    },
+    {
+      "path": "public/models/realistic/modern_arm_chair_01.glb",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modern_arm_chair_01/modern_arm_chair_01_1k.gltf",
+      "sourceMd5": "a5ce303bc2962fe98b733fcdfa5a842b",
+      "sourceVariant": "1k glTF",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "bytes": 243856,
+      "sha256": "503e0bfa1caab042dcdc2eab8365160fa3aeac0d278e92fbcf1a189c7fa1cfc0",
+      "triangles": 8916,
+      "materials": 2,
+      "images": [
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_legs_nor_gl_1k.jpg",
+          "sourceMd5": "7cece7eccf75588af5b5df9b095d2c97",
+          "bytes": 235726,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/modern_arm_chair_01-0.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_legs_diff_1k.jpg",
+          "sourceMd5": "778f1897e07ff81b2bc338f3d463ad1f",
+          "bytes": 217051,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/modern_arm_chair_01-1.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_legs_arm_1k.jpg",
+          "sourceMd5": "9c69cb001df175bddf6d1c2436567fb7",
+          "bytes": 248117,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/modern_arm_chair_01-2.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_pillow_nor_gl_1k.jpg",
+          "sourceMd5": "6804f34108fcc755f0c84dd3c638270c",
+          "bytes": 117399,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/modern_arm_chair_01-3.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_pillow_diff_1k.jpg",
+          "sourceMd5": "2e4f64c633c3cb1656ad3eabdb3f0607",
+          "bytes": 88835,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/modern_arm_chair_01-4.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_pillow_arm_1k.jpg",
+          "sourceMd5": "772495ddbf26ca3de4b31298f10113b9",
+          "bytes": 118188,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/modern_arm_chair_01-5.jpg"
+        }
+      ],
+      "extensionsUsed": [],
+      "bounds": {
+        "min": [
+          -0.4068087339401245,
+          0.0003815953677985817,
+          -0.5754517316818237
+        ],
+        "max": [
+          0.4135356843471527,
+          1.0232336521148682,
+          0.41110995411872864
+        ]
+      },
+      "recipe": "scripts/prepare-room-assets.mjs imports: embed source buffers/images, sips max1024 JPEG quality80; retain PNG alpha; no geometry compression; image extraction moves images into colocated URLs for CSP compatibility",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-09",
+      "dimensions": [
+        0.8203444182872772,
+        1.0228520567470696,
+        0.9865616858005524
+      ]
+    },
+    {
+      "path": "public/models/realistic/potted_plant_02.glb",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/potted_plant_02/potted_plant_02_1k.gltf",
+      "sourceMd5": "9999d7e6c51018a85551840e1bdae656",
+      "sourceVariant": "1k glTF",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "bytes": 1856220,
+      "sha256": "23f0cd5b76bf812547dc9231a39a72e656057fc328b565cc2ef6f957b61f4b3a",
+      "triangles": 69806,
+      "materials": 2,
+      "images": [
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_nor_gl_1k.jpg",
+          "sourceMd5": "fbb44ccc1c6564b2837b79a11ed45d58",
+          "bytes": 141899,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/potted_plant_02-0.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_diff_1k.jpg",
+          "sourceMd5": "97e149c93eb0d962e491d4c82d3ce477",
+          "bytes": 204832,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/potted_plant_02-1.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_rough_1k.jpg",
+          "sourceMd5": "68ed80fa32791fb0e81df61a75de40b4",
+          "bytes": 150276,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/potted_plant_02-2.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_nor_gl_1k.jpg",
+          "sourceMd5": "2420d5c0ab87426f5318a5e91d1ea3bb",
+          "bytes": 167883,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/potted_plant_02-3.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_diff_1k.jpg",
+          "sourceMd5": "e8a026bd7bfa6497729d855c59da03ce",
+          "bytes": 223127,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/potted_plant_02-4.jpg"
+        },
+        {
+          "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_rough_1k.jpg",
+          "sourceMd5": "ba934a78cc6496d934c014eb8a33af37",
+          "bytes": 141755,
+          "width": 1024,
+          "height": 1024,
+          "decodedBytesWithMipmaps": 5592406,
+          "path": "public/models/realistic/textures/potted_plant_02-5.jpg"
+        }
+      ],
+      "extensionsUsed": [],
+      "bounds": {
+        "min": [
+          -0.3966600392013788,
+          5.296462768455967e-05,
+          -0.42031260282965377
+        ],
+        "max": [
+          0.3044969942420721,
+          0.8412317037582397,
+          0.23707397282123566
+        ]
+      },
+      "recipe": "scripts/prepare-room-assets.mjs imports: embed source buffers/images, sips max1024 JPEG quality80; retain PNG alpha; no geometry compression; image extraction moves images into colocated URLs for CSP compatibility",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-09",
+      "dimensions": [
+        0.7011570334434509,
+        0.8411787391305552,
+        0.6573865756508894
+      ]
+    },
+    {
+      "path": "public/environments/studio_small_09_1k.hdr",
+      "status": "active",
+      "source": "https://polyhaven.com/a/studio_small_09",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_09_1k.hdr",
+      "sourceMd5": "d5d7eb9d26d341d6aa4d11c1a54fd97c",
+      "sourceVariant": "1k HDR",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "bytes": 1615248,
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45",
+      "recipe": "scripts/prepare-room-assets.mjs imports: unchanged source HDR, no recompression",
+      "tool": "v22.17.0",
+      "date": "2026-09-09",
+      "dimensions": [
+        1024,
+        512
+      ],
+      "decodedBytesRGBAHalfFloat": 4194304
+    },
+    {
+      "path": "public/models/realistic/desk.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 261280,
+      "sha256": "fdc9c04f3513310e5d511a84cdeab047b538f51ae0774415f5220cb86cff29a4",
+      "dimensions": [
+        2.9000000953674316,
+        0.7699999678134919,
+        0.75
+      ],
+      "bounds": {
+        "min": [
+          -1.4500000476837158,
+          1.3113021779531664e-08,
+          -0.375
+        ],
+        "max": [
+          1.4500000476837158,
+          0.7699999809265137,
+          0.375
+        ]
+      },
+      "triangles": 2700,
+      "materials": 2,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/officeChair.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 356660,
+      "sha256": "690e259a6a1e31f1bb2d5bc88659a31dc36c7bc855cc0475daee4cf03c967e21",
+      "dimensions": [
+        0.675000011920929,
+        1.0738377994857728,
+        0.5895698368549347
+      ],
+      "bounds": {
+        "min": [
+          -0.3375000059604645,
+          0.005999999586492777,
+          -0.2675698399543762
+        ],
+        "max": [
+          0.3375000059604645,
+          1.0798377990722656,
+          0.32199999690055847
+        ]
+      },
+      "triangles": 3684,
+      "materials": 3,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/coffeeTable.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 84304,
+      "sha256": "6a39d76e6e04f03281b2fc87ce58540942e4749a127502ac7e2fb7bb8d5ae6fc",
+      "dimensions": [
+        1.0800000429153442,
+        0.4600000041723251,
+        0.6200000047683716
+      ],
+      "bounds": {
+        "min": [
+          -0.5400000214576721,
+          4.172325152040912e-09,
+          -0.3100000023841858
+        ],
+        "max": [
+          0.5400000214576721,
+          0.46000000834465027,
+          0.3100000023841858
+        ]
+      },
+      "triangles": 856,
+      "materials": 2,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/sideTable.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 55472,
+      "sha256": "1d7fa7422e6ded5f8a74089c48d335f1bb40e549c8396e2fcc0e2232fe170f6b",
+      "dimensions": [
+        0.5699999928474426,
+        0.7699999928474428,
+        0.5
+      ],
+      "bounds": {
+        "min": [
+          -0.2849999964237213,
+          -1.1920929132713809e-08,
+          -0.25
+        ],
+        "max": [
+          0.2849999964237213,
+          0.7699999809265137,
+          0.25
+        ]
+      },
+      "triangles": 556,
+      "materials": 2,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/shelf.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 203668,
+      "sha256": "ed8658556ecfc3378f2899b98235aa7d3acbf7f1b7eaf621608abfe17cb50c75",
+      "dimensions": [
+        0.949999988079071,
+        0.8000000178813935,
+        0.3799999952316284
+      ],
+      "bounds": {
+        "min": [
+          -0.4749999940395355,
+          -5.9604645663569045e-09,
+          -0.1899999976158142
+        ],
+        "max": [
+          0.4749999940395355,
+          0.800000011920929,
+          0.1899999976158142
+        ]
+      },
+      "triangles": 2100,
+      "materials": 2,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/cushion.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 29964,
+      "sha256": "36c3faf3c729465e6a10b3279a5f570c08885772e6cd2010832b9d32f1283eb0",
+      "dimensions": [
+        0.44999998807907104,
+        0.12999999802559614,
+        0.41999998688697815
+      ],
+      "bounds": {
+        "min": [
+          -0.22499999403953552,
+          0.010000002570450306,
+          -0.20999999344348907
+        ],
+        "max": [
+          0.22499999403953552,
+          0.14000000059604645,
+          0.20999999344348907
+        ]
+      },
+      "triangles": 300,
+      "materials": 1,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/rug.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 29952,
+      "sha256": "d8584ccd5d5e42fe57e12d194625fcf985e6c420ba553d20f93559a46406690f",
+      "dimensions": [
+        1.649999976158142,
+        0.012000000156462194,
+        1.1200000047683716
+      ],
+      "bounds": {
+        "min": [
+          -0.824999988079071,
+          -5.215406578829018e-11,
+          -0.5600000023841858
+        ],
+        "max": [
+          0.824999988079071,
+          0.012000000104308128,
+          0.5600000023841858
+        ]
+      },
+      "triangles": 300,
+      "materials": 1,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/models/realistic/coatRack.glb",
+      "status": "active",
+      "source": "scripts/prepare-studio-furniture.mjs",
+      "author": "Original geometry created for somosbytes",
+      "license": "CC0-1.0",
+      "licenseEvidence": "Original geometry dedicated to CC0 in the source generator",
+      "bytes": 194072,
+      "sha256": "dd950c42c44b0d4627ca14ed3b9b3b90ff3b0f6076307092bfeb727725fbbe5d",
+      "dimensions": [
+        0.5,
+        1.574999929368496,
+        0.5
+      ],
+      "bounds": {
+        "min": [
+          -0.25,
+          -8.940696516468449e-10,
+          -0.25
+        ],
+        "max": [
+          0.25,
+          1.5749999284744263,
+          0.25
+        ]
+      },
+      "triangles": 2000,
+      "materials": 2,
+      "images": [],
+      "extensionsRequired": [],
+      "recipe": "Run scripts/prepare-studio-furniture.mjs; rounded primitives merged by material; meters/Y-up; ordinary GLB; no decoder",
+      "tool": "Three.js r185; v22.17.0",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/textures/furniture/fabric_pattern_07-normal.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/fabric_pattern_07",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_nor_gl_1k.jpg",
+      "sourceMd5": "cdbbc2ebe5d75f6edd66ba090f3be49f",
+      "sha256": "909d6ad6aa34c17d7cec824159d379922d6cf50192f5cb30bfce3e2a01eace3d",
+      "bytes": 787192,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80 --fabric (normal and roughness only; solid material color)",
+      "tool": "sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "path": "public/textures/furniture/fabric_pattern_07-roughness.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/fabric_pattern_07",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sourceVariant": "1k jpg",
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_rough_1k.jpg",
+      "sourceMd5": "28f47eb9de3e4ebe1dc519f601335fc4",
+      "sha256": "9270c70a8088fb5433c6b272dc7448fa33a82c95196cfae4f38f3991d20c74df",
+      "bytes": 438416,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "decodedBytesWithMipmaps": 5592406,
+      "recipe": "scripts/prepare-room-assets.mjs surfaces: sips -Z 1024 -s format jpeg -s formatOptions 80 --fabric (normal and roughness only; solid material color)",
+      "tool": "sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_legs_nor_gl_1k.jpg",
+      "sourceMd5": "7cece7eccf75588af5b5df9b095d2c97",
+      "bytes": 235726,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/modern_arm_chair_01-0.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "29e6e606a792e9d4288aa21b29cf06793064e4c61d02c699407d1571fdfa7330",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_legs_diff_1k.jpg",
+      "sourceMd5": "778f1897e07ff81b2bc338f3d463ad1f",
+      "bytes": 217051,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/modern_arm_chair_01-1.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "b6d3d51366b5e2d25a70dfd93175a1b41ad2e27e9cd0ef7e5603e377955edccb",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_legs_arm_1k.jpg",
+      "sourceMd5": "9c69cb001df175bddf6d1c2436567fb7",
+      "bytes": 248117,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/modern_arm_chair_01-2.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "13cdb67786c687676df65b8b8f3d4e9027321713d3aa21d4502852cc513843a9",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_pillow_nor_gl_1k.jpg",
+      "sourceMd5": "6804f34108fcc755f0c84dd3c638270c",
+      "bytes": 117399,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/modern_arm_chair_01-3.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "a20268e518cba21a6c4eca55411e2e1e34f8e088f52f7af85890dc68dba72e8a",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_pillow_diff_1k.jpg",
+      "sourceMd5": "2e4f64c633c3cb1656ad3eabdb3f0607",
+      "bytes": 88835,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/modern_arm_chair_01-4.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "44ccb4655867843751e0edc2f4c9bda929cc6eb1194a6d458f8c3d2c889f5221",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_arm_chair_01/modern_arm_chair_01_pillow_arm_1k.jpg",
+      "sourceMd5": "772495ddbf26ca3de4b31298f10113b9",
+      "bytes": 118188,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/modern_arm_chair_01-5.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/modern_arm_chair_01",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "341b1f51053b86b360306a6b214a50e6791255ba32889222771125425047bea0",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_nor_gl_1k.jpg",
+      "sourceMd5": "fbb44ccc1c6564b2837b79a11ed45d58",
+      "bytes": 141899,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/potted_plant_02-0.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "a8a22864ab732ff7898ced78d232470596e8e608ac346b1c2185eb5a12ff0310",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_diff_1k.jpg",
+      "sourceMd5": "97e149c93eb0d962e491d4c82d3ce477",
+      "bytes": 204832,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/potted_plant_02-1.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "f75ca05f52407de9178fc608bc8c3ccd064da6b9412f37668e4054d9771006f9",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_rough_1k.jpg",
+      "sourceMd5": "68ed80fa32791fb0e81df61a75de40b4",
+      "bytes": 150276,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/potted_plant_02-2.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "72dbe10d397e210a80b1fa8f06b146d5b26c7dcf9b4e99463d4e125476e17ca2",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_nor_gl_1k.jpg",
+      "sourceMd5": "2420d5c0ab87426f5318a5e91d1ea3bb",
+      "bytes": 167883,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/potted_plant_02-3.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "cdfd797596186696ba11133750c6eb880840f42ad4b3e8ebc4b12c4b606c8904",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_diff_1k.jpg",
+      "sourceMd5": "e8a026bd7bfa6497729d855c59da03ce",
+      "bytes": 223127,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/potted_plant_02-4.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "cbfaf22a7c387352a50dafb9a934294fdcf0dce121c2006a2c974f97573c1043",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    },
+    {
+      "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_rough_1k.jpg",
+      "sourceMd5": "ba934a78cc6496d934c014eb8a33af37",
+      "bytes": 141755,
+      "width": 1024,
+      "height": 1024,
+      "decodedBytesWithMipmaps": 5592406,
+      "path": "public/models/realistic/textures/potted_plant_02-5.jpg",
+      "status": "active",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://polyhaven.com/license",
+      "sha256": "f42f5607ba7e312b4980e242c6e0a559c777d9b74fca81cd7ce9a79d993309e2",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "recipe": "scripts/prepare-room-assets.mjs imports: extract images without changing bytes",
+      "tool": "v22.17.0; sips-316",
+      "date": "2026-09-10"
+    }
+  ],
+  "baselineModelBytes": 215624,
+  "finalAudit": {
+    "date": "2026-09-10",
+    "requestedSceneBytes": 9778972,
+    "requestedSceneFiles": [
+      "public/models/books.glb",
+      "public/models/computerKeyboard.glb",
+      "public/models/computerMouse.glb",
+      "public/models/lampRoundFloor.glb",
+      "public/models/lampRoundTable.glb",
+      "public/models/laptop.glb",
+      "public/textures/room/wood_floor-color.jpg",
+      "public/textures/room/wood_floor-normal.jpg",
+      "public/textures/room/wood_floor-roughness.jpg",
+      "public/textures/room/plastered_wall-color.jpg",
+      "public/textures/room/plastered_wall-normal.jpg",
+      "public/textures/room/plastered_wall-roughness.jpg",
+      "public/models/realistic/modern_arm_chair_01.glb",
+      "public/models/realistic/potted_plant_02.glb",
+      "public/environments/studio_small_09_1k.hdr",
+      "public/models/realistic/desk.glb",
+      "public/models/realistic/officeChair.glb",
+      "public/models/realistic/coffeeTable.glb",
+      "public/models/realistic/sideTable.glb",
+      "public/models/realistic/shelf.glb",
+      "public/models/realistic/cushion.glb",
+      "public/models/realistic/rug.glb",
+      "public/models/realistic/coatRack.glb",
+      "public/textures/furniture/fabric_pattern_07-normal.jpg",
+      "public/textures/furniture/fabric_pattern_07-roughness.jpg",
+      "public/models/realistic/textures/modern_arm_chair_01-0.jpg",
+      "public/models/realistic/textures/modern_arm_chair_01-1.jpg",
+      "public/models/realistic/textures/modern_arm_chair_01-2.jpg",
+      "public/models/realistic/textures/modern_arm_chair_01-3.jpg",
+      "public/models/realistic/textures/modern_arm_chair_01-4.jpg",
+      "public/models/realistic/textures/modern_arm_chair_01-5.jpg",
+      "public/models/realistic/textures/potted_plant_02-0.jpg",
+      "public/models/realistic/textures/potted_plant_02-1.jpg",
+      "public/models/realistic/textures/potted_plant_02-2.jpg",
+      "public/models/realistic/textures/potted_plant_02-3.jpg",
+      "public/models/realistic/textures/potted_plant_02-4.jpg",
+      "public/models/realistic/textures/potted_plant_02-5.jpg"
+    ],
+    "decodedImageBytesWithMipmaps": 111848120,
+    "note": "Image estimate excludes HDR, PMREM, shadow render targets and generated UI textures. Desktop GPU allocation is not physical-phone evidence."
+  }
+}
