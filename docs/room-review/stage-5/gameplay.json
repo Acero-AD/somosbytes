@@ -1,0 +1,22 @@
+{
+  "meshClick": true,
+  "coarsePointer": true,
+  "dpadStartAndSteer": true,
+  "start": {
+    "status": "running",
+    "ticks": 2
+  },
+  "hiddenBefore": {
+    "frame": 157,
+    "ticks": 4,
+    "status": "paused"
+  },
+  "hiddenAfter": {
+    "frame": 157,
+    "ticks": 4,
+    "status": "paused"
+  },
+  "keyboardResume": true,
+  "exitReset": true,
+  "note": "Desktop touch emulation and synthetic visibility event; physical phone and OS background check pending."
+}

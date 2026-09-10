@@ -1,0 +1,37 @@
+{
+  "skippedWhileLoading": true,
+  "delayedRequests": 6,
+  "mapsReadyAfterReload": [
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-color.jpg",
+      "bytes": 305286,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-normal.jpg",
+      "bytes": 109426,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-roughness.jpg",
+      "bytes": 237099,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-color.jpg",
+      "bytes": 268326,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-roughness.jpg",
+      "bytes": 134709,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-normal.jpg",
+      "bytes": 477782,
+      "status": 200
+    }
+  ],
+  "note": "RoomSurface loads all maps inside the shared scene Suspense boundary."
+}
