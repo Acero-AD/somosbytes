@@ -1,6 +1,6 @@
 import type { ThreeElements } from '@react-three/fiber'
 import { palette } from '../palette'
-import { KenneyModel } from './KenneyModel'
+import { StudioModel } from './StudioModel'
 
 type GroupProps = ThreeElements['group']
 
@@ -10,9 +10,9 @@ type GroupProps = ThreeElements['group']
 export function ReadingNook(props: GroupProps) {
   return (
     <group {...props}>
-      <KenneyModel model="rugRounded" position={[0.2, 0.002, 0.2]} scale={1.2} castShadow={false} tint={{ carpetDarker: palette.mint, carpet: '#ddefe5' }} />
+      <StudioModel model="rug" position={[0.2, 0.002, 0.2]} scale={0.85} castShadow={false} tint={{ linen: '#91a092' }} />
       {/* seat cushion lying flat */}
-      <KenneyModel model="pillow" position={[0, 0.12, 0]} rotation={[-Math.PI / 2 + 0.06, 0.3, 0]} castShadow={false} />
+      <StudioModel model="cushion" tint={{ fabric: '#bb9167' }} position={[0, 0.012, 0]} rotation={[0, 0.3, 0]} castShadow={false} />
       {/* open book: two halves in a shallow V, white pages on top */}
       <group position={[0.42, 0.025, 0.3]} rotation={[0, -0.5, 0]}>
         <mesh position={[-0.077, 0.028, 0]} rotation={[0, 0, 0.22]}>

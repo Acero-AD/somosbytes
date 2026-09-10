@@ -1,0 +1,322 @@
+{
+  "viewport": [
+    1280,
+    720
+  ],
+  "dpr": 1,
+  "coldPeak": {
+    "calls": 360,
+    "triangles": 786982
+  },
+  "settledLastFrames": [
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 167,
+      "triangles": 393360
+    },
+    {
+      "calls": 168,
+      "triangles": 393362
+    },
+    {
+      "calls": 168,
+      "triangles": 393362
+    },
+    {
+      "calls": 168,
+      "triangles": 393362
+    }
+  ],
+  "violations": [],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/assets/index-pTTTfQt8.js",
+      "bytes": 195523,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-Bi3kDUrB.css",
+      "bytes": 4969,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/Scene3DApp-BfoSaOI1.js",
+      "bytes": 1098985,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/environments/studio_small_09_1k.hdr",
+      "bytes": 1615248,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-color.jpg",
+      "bytes": 305286,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-normal.jpg",
+      "bytes": 109426,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/wood_floor-roughness.jpg",
+      "bytes": 237099,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-color.jpg",
+      "bytes": 268326,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-normal.jpg",
+      "bytes": 477782,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/room/plastered_wall-roughness.jpg",
+      "bytes": 134709,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerScreen.glb",
+      "bytes": 6404,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerKeyboard.glb",
+      "bytes": 3476,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerMouse.glb",
+      "bytes": 5868,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/lampRoundFloor.glb",
+      "bytes": 6600,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/lampRoundTable.glb",
+      "bytes": 6604,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/books.glb",
+      "bytes": 6864,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/laptop.glb",
+      "bytes": 5540,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/branding/logo.jpg",
+      "bytes": 267823,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/desk.glb",
+      "bytes": 261280,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/officeChair.glb",
+      "bytes": 356660,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/coffeeTable.glb",
+      "bytes": 84304,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/sideTable.glb",
+      "bytes": 55472,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/shelf.glb",
+      "bytes": 203668,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/modern_arm_chair_01.glb",
+      "bytes": 243856,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/potted_plant_02.glb",
+      "bytes": 1856220,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/cushion.glb",
+      "bytes": 29964,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/rug.glb",
+      "bytes": 29952,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/coatRack.glb",
+      "bytes": 194072,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/modern_arm_chair_01-1.jpg",
+      "bytes": 217051,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/modern_arm_chair_01-2.jpg",
+      "bytes": 248117,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/modern_arm_chair_01-4.jpg",
+      "bytes": 88835,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/modern_arm_chair_01-5.jpg",
+      "bytes": 118188,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/modern_arm_chair_01-0.jpg",
+      "bytes": 235726,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/modern_arm_chair_01-3.jpg",
+      "bytes": 117399,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/potted_plant_02-1.jpg",
+      "bytes": 204832,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/potted_plant_02-2.jpg",
+      "bytes": 150276,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/potted_plant_02-0.jpg",
+      "bytes": 141899,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/potted_plant_02-4.jpg",
+      "bytes": 223127,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/potted_plant_02-5.jpg",
+      "bytes": 141755,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/realistic/textures/potted_plant_02-3.jpg",
+      "bytes": 167883,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/furniture/fabric_pattern_07-roughness.jpg",
+      "bytes": 438416,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/textures/furniture/fabric_pattern_07-normal.jpg",
+      "bytes": 787192,
+      "status": 200
+    }
+  ],
+  "loadTiming": {
+    "name": "http://127.0.0.1:4173/",
+    "entryType": "navigation",
+    "startTime": 0,
+    "duration": 24.799999997019768,
+    "navigationId": 9910,
+    "initiatorType": "navigation",
+    "deliveryType": "",
+    "nextHopProtocol": "http/1.1",
+    "renderBlockingStatus": "non-blocking",
+    "contentType": "text/html",
+    "contentEncoding": "",
+    "workerStart": 0,
+    "workerRouterEvaluationStart": 0,
+    "workerCacheLookupStart": 0,
+    "workerMatchedSourceType": "",
+    "workerFinalSourceType": "",
+    "redirectStart": 0,
+    "redirectEnd": 0,
+    "fetchStart": 0.29999999701976776,
+    "domainLookupStart": 0.29999999701976776,
+    "domainLookupEnd": 0.29999999701976776,
+    "connectStart": 0.29999999701976776,
+    "secureConnectionStart": 0,
+    "connectEnd": 0.29999999701976776,
+    "requestStart": 0.6999999955296516,
+    "responseStart": 1.5,
+    "firstInterimResponseStart": 0,
+    "finalResponseHeadersStart": 1.5,
+    "responseEnd": 1.6000000014901161,
+    "transferSize": 4217,
+    "encodedBodySize": 3917,
+    "decodedBodySize": 3917,
+    "responseStatus": 200,
+    "serverTiming": [],
+    "unloadEventStart": 2.899999998509884,
+    "unloadEventEnd": 2.899999998509884,
+    "domInteractive": 20.799999997019768,
+    "domContentLoadedEventStart": 24.5,
+    "domContentLoadedEventEnd": 24.5,
+    "domComplete": 24.799999997019768,
+    "loadEventStart": 24.799999997019768,
+    "loadEventEnd": 24.799999997019768,
+    "type": "reload",
+    "redirectCount": 0,
+    "activationStart": 0,
+    "criticalCHRestart": 0,
+    "notRestoredReasons": null,
+    "confidence": {
+      "randomizedTriggerRate": 0.4994798,
+      "value": "low"
+    }
+  },
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+  "browser": "152.0.7977.83",
+  "reducedMotionIdleFrames": 0
+}

@@ -13,27 +13,12 @@ type GroupProps = ThreeElements['group']
 export const KENNEY_SCALE = 2
 
 const MODEL_NAMES = [
-  'desk',
-  'computerScreen',
   'computerKeyboard',
   'computerMouse',
-  'chairDesk',
-  'tableCoffee',
-  'pottedPlant',
-  'plantSmall1',
-  'plantSmall2',
-  'rugRound',
-  'rugRounded',
-  'rugDoormat',
   'lampRoundFloor',
   'lampRoundTable',
   'books',
-  'bookcaseOpenLow',
-  'loungeChair',
-  'pillow',
-  'coatRackStanding',
   'laptop',
-  'sideTable',
 ] as const
 
 export type KenneyModelName = (typeof MODEL_NAMES)[number]
