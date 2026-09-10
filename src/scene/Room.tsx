@@ -1,7 +1,7 @@
-import { useMemo } from 'react'
+import { BeveledBoxGeometry } from './objects/BeveledBoxGeometry'
 import { useScene } from '../state/store'
-import { plankTexture, wallTexture } from '../utils/canvasTextures'
 import { palette } from './palette'
+import { RoomSurface } from './RoomSurface'
 
 export const ROOM_SIZE = 6
 export const WALL_HEIGHT = 3
@@ -12,8 +12,6 @@ const THICKNESS = 0.2
 // Clicking any room surface while focused returns to overview — but not
 // mid-flight, so a stray click can't cancel the visitor's own zoom-in.
 export function Room() {
-  const floorMap = useMemo(plankTexture, [])
-  const wallMap = useMemo(wallTexture, [])
   const onClick = () => {
     const { isTransitioning, back } = useScene.getState()
     if (!isTransitioning) back()
@@ -22,28 +20,19 @@ export function Room() {
     <group onClick={onClick}>
       {/* diorama platform: grounds the room in the backdrop */}
       <mesh position={[0.1, -0.35, 0.1]}>
-        <boxGeometry args={[7.6, 0.3, 7.6]} />
+        <BeveledBoxGeometry args={[7.6, 0.3, 7.6]} />
         <meshStandardMaterial color={palette.platform} roughness={1} />
       </mesh>
-      <mesh position={[0, -THICKNESS / 2, 0]} receiveShadow>
-        <boxGeometry args={[ROOM_SIZE, THICKNESS, ROOM_SIZE]} />
-        <meshStandardMaterial map={floorMap} roughness={0.9} />
-      </mesh>
-      <mesh position={[0, WALL_HEIGHT / 2, -ROOM_SIZE / 2 - THICKNESS / 2]} receiveShadow>
-        <boxGeometry args={[ROOM_SIZE + THICKNESS * 2, WALL_HEIGHT, THICKNESS]} />
-        <meshStandardMaterial map={wallMap} roughness={0.95} />
-      </mesh>
-      <mesh position={[-ROOM_SIZE / 2 - THICKNESS / 2, WALL_HEIGHT / 2, 0]} receiveShadow>
-        <boxGeometry args={[THICKNESS, WALL_HEIGHT, ROOM_SIZE]} />
-        <meshStandardMaterial map={wallMap} roughness={0.95} />
-      </mesh>
+      <RoomSurface finish="wood" size={[ROOM_SIZE, THICKNESS, ROOM_SIZE]} position={[0, -THICKNESS / 2, 0]} />
+      <RoomSurface finish="plaster" size={[ROOM_SIZE + THICKNESS * 2, WALL_HEIGHT, THICKNESS]} position={[0, WALL_HEIGHT / 2, -ROOM_SIZE / 2 - THICKNESS / 2]} />
+      <RoomSurface finish="plaster" size={[THICKNESS, WALL_HEIGHT, ROOM_SIZE]} position={[-ROOM_SIZE / 2 - THICKNESS / 2, WALL_HEIGHT / 2, 0]} />
       {/* baseboards */}
       <mesh position={[0, 0.06, -ROOM_SIZE / 2 + 0.025]}>
-        <boxGeometry args={[ROOM_SIZE, 0.12, 0.05]} />
+        <BeveledBoxGeometry args={[ROOM_SIZE, 0.12, 0.05]} />
         <meshStandardMaterial color={palette.cream} roughness={0.85} />
       </mesh>
       <mesh position={[-ROOM_SIZE / 2 + 0.025, 0.06, 0]}>
-        <boxGeometry args={[0.05, 0.12, ROOM_SIZE]} />
+        <BeveledBoxGeometry args={[0.05, 0.12, ROOM_SIZE]} />
         <meshStandardMaterial color={palette.cream} roughness={0.85} />
       </mesh>
     </group>
