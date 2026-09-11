@@ -19,3 +19,21 @@
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Scene assets: stable filenames, but only ever replaced by a deliberate rerun of
+# scripts/prepare-room-assets.mjs. Platform default (revalidate every request) costs a
+# round trip of 304s before the room can draw. A day of freshness plus a week of
+# stale-while-revalidate serves repeat visits from cache with no blocking request and
+# still picks up a swapped asset on the next visit after it expires. Browsers without
+# stale-while-revalidate (Safari) fall back to the max-age and still skip the 304s.
+# Deliberately excludes /cv/*, /branding/* and /icons/*, which keep the revalidating
+# default so a replaced CV is never stale.
+
+/models/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/textures/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/environments/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
