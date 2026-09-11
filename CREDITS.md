@@ -26,6 +26,9 @@ Diego Acero's own avatar artwork; all rights reserved by the author.
 
 ## Room screenshot — `public/branding/room.jpg`
 
-A capture of this project's own scene, used as the README image and the link-preview image.
-It therefore contains the Kenney furniture models (CC0) and the author's logo, and inherits
-the terms of both.
+A capture of this project's own scene in dusk mood, used as the README image and the
+link-preview image. It therefore contains the Poly Haven and original CC0 room assets, the
+retained Kenney props (CC0), and the author's logo, and inherits the terms of all of them.
+
+Recaptured 2026-09-11 at 1280x720 from the stage-5 acceptance matrix
+(`docs/room-review/stage-5/desktop-dusk-overview.png`), encoded as JPEG quality 86.

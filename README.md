@@ -99,11 +99,13 @@ ones that landed. Behaviour changes start with a proposal there, not with code.
 
 ## Credits
 
-The furniture is Kenney's CC0 Furniture Kit, the icons were drawn for this project, and the
-logo is the author's own artwork. Full details in [CREDITS.md](CREDITS.md).
+The room's furniture, surfaces and lighting environment are CC0 assets from Poly Haven plus
+original models generated for this project; the keyboard, mouse, laptop, books and lamps come
+from Kenney's CC0 Furniture Kit. The icons were drawn for this project and the logo is the
+author's own artwork. Full details in [CREDITS.md](CREDITS.md).
 
 ## License
 
 The code is MIT — see [LICENSE](LICENSE). The bundled assets keep their own terms: the
-furniture models are CC0, and the logo in `public/branding/` is the author's artwork and is
-not covered by the MIT grant. See [CREDITS.md](CREDITS.md).
+models, textures and lighting environment are CC0, and the logo in `public/branding/` is the
+author's artwork and is not covered by the MIT grant. See [CREDITS.md](CREDITS.md).
