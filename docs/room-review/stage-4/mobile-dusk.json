@@ -1,0 +1,281 @@
+{
+  "views": [
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "overview",
+      "state": {
+        "mode": "overview",
+        "activeHotspot": null
+      },
+      "renderer": {
+        "calls": 160,
+        "triangles": 323468,
+        "frame": 29
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "pc",
+      "state": {
+        "mode": "screen",
+        "activeHotspot": "pc"
+      },
+      "renderer": {
+        "calls": 71,
+        "triangles": 237018,
+        "frame": 77
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "magazines",
+      "state": {
+        "mode": "focused",
+        "activeHotspot": "magazines"
+      },
+      "renderer": {
+        "calls": 95,
+        "triangles": 241359,
+        "frame": 340
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "cvFrame",
+      "state": {
+        "mode": "focused",
+        "activeHotspot": "cvFrame"
+      },
+      "renderer": {
+        "calls": 68,
+        "triangles": 161423,
+        "frame": 570
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "phone",
+      "state": {
+        "mode": "focused",
+        "activeHotspot": "phone"
+      },
+      "renderer": {
+        "calls": 76,
+        "triangles": 236881,
+        "frame": 832
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "arcade",
+      "state": {
+        "mode": "screen",
+        "activeHotspot": "arcade"
+      },
+      "renderer": {
+        "calls": 68,
+        "triangles": 163391,
+        "frame": 1040
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "orbit-min",
+      "state": {
+        "mode": "overview",
+        "activeHotspot": null
+      },
+      "renderer": {
+        "calls": 165,
+        "triangles": 393334,
+        "frame": 1221
+      }
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "name": "orbit-max",
+      "state": {
+        "mode": "overview",
+        "activeHotspot": null
+      },
+      "renderer": {
+        "calls": 167,
+        "triangles": 339432,
+        "frame": 1454
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "id": "pc",
+      "active": "pc",
+      "mode": "screen",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "id": "magazines",
+      "active": "magazines",
+      "mode": "focused",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "id": "cvFrame",
+      "active": "cvFrame",
+      "mode": "focused",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "id": "phone",
+      "active": "phone",
+      "mode": "focused",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "mobile",
+      "mood": "dusk",
+      "id": "arcade",
+      "active": "arcade",
+      "mode": "screen",
+      "activation": "dev state hook; mesh click not checked"
+    }
+  ],
+  "notes": [
+    "Desktop browser; mobile viewport is emulation, not a physical phone."
+  ],
+  "reducedMotionIdleFrames": 0,
+  "browser": "152.0.7977.83",
+  "resources": [
+    {
+      "url": "http://127.0.0.1:5173/models/computerScreen.glb",
+      "bytes": 6404
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/computerKeyboard.glb",
+      "bytes": 3476
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/computerMouse.glb",
+      "bytes": 5868
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/lampRoundFloor.glb",
+      "bytes": 6600
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/lampRoundTable.glb",
+      "bytes": 6604
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/books.glb",
+      "bytes": 6864
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/laptop.glb",
+      "bytes": 5540
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/desk.glb",
+      "bytes": 261280
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/officeChair.glb",
+      "bytes": 356660
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/coffeeTable.glb",
+      "bytes": 84304
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/sideTable.glb",
+      "bytes": 55472
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/shelf.glb",
+      "bytes": 203668
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/cushion.glb",
+      "bytes": 29964
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/modern_arm_chair_01.glb",
+      "bytes": 243856
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/potted_plant_02.glb",
+      "bytes": 1856220
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/rug.glb",
+      "bytes": 29952
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/coatRack.glb",
+      "bytes": 194072
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/modern_arm_chair_01-1.jpg",
+      "bytes": 217051
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/modern_arm_chair_01-4.jpg",
+      "bytes": 88835
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/modern_arm_chair_01-5.jpg",
+      "bytes": 118188
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/modern_arm_chair_01-2.jpg",
+      "bytes": 248117
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/modern_arm_chair_01-0.jpg",
+      "bytes": 235726
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/modern_arm_chair_01-3.jpg",
+      "bytes": 117399
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/potted_plant_02-1.jpg",
+      "bytes": 204832
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/potted_plant_02-2.jpg",
+      "bytes": 150276
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/potted_plant_02-0.jpg",
+      "bytes": 141899
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/potted_plant_02-4.jpg",
+      "bytes": 223127
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/potted_plant_02-5.jpg",
+      "bytes": 141755
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/realistic/textures/potted_plant_02-3.jpg",
+      "bytes": 167883
+    }
+  ]
+}

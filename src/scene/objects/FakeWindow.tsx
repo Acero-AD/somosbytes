@@ -1,3 +1,4 @@
+import { BeveledBoxGeometry } from './BeveledBoxGeometry'
 import { useMemo } from 'react'
 import type { ThreeElements } from '@react-three/fiber'
 import { useScene } from '../../state/store'
@@ -64,7 +65,7 @@ export function FakeWindow(props: GroupProps) {
         { pos: [0, 0, 0.015] as const, size: [0.05, HEIGHT, 0.04] as const },
       ].map(({ pos, size }, i) => (
         <mesh key={i} position={[pos[0], pos[1], pos[2]]}>
-          <boxGeometry args={[size[0], size[1], size[2]]} />
+          <BeveledBoxGeometry args={[size[0], size[1], size[2]]} />
           <meshStandardMaterial color={palette.cream} roughness={0.85} />
         </mesh>
       ))}

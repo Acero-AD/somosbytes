@@ -1,3 +1,4 @@
+import { BeveledBoxGeometry } from './BeveledBoxGeometry'
 import type { ThreeElements } from '@react-three/fiber'
 import { palette } from '../palette'
 
@@ -9,7 +10,7 @@ export function CvFrame(props: GroupProps) {
   return (
     <group {...props}>
       <mesh castShadow>
-        <boxGeometry args={[0.5, 0.7, 0.04]} />
+        <BeveledBoxGeometry args={[0.5, 0.7, 0.04]} />
         <meshStandardMaterial color={palette.wood} roughness={0.8} />
       </mesh>
       <mesh position={[0, 0, 0.021]}>

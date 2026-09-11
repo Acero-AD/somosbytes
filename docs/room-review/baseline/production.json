@@ -1,0 +1,237 @@
+{
+  "viewport": [
+    1280,
+    720
+  ],
+  "dpr": 1,
+  "coldPeak": {
+    "calls": 349,
+    "triangles": 13214
+  },
+  "settledLastFrames": [
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    },
+    {
+      "calls": 173,
+      "triangles": 6604
+    }
+  ],
+  "violations": [],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/assets/index-D4iiS-wX.js",
+      "bytes": 195523,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-Bi3kDUrB.css",
+      "bytes": 4969,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/Scene3DApp-ngJHKHiM.js",
+      "bytes": 1046141,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/desk.glb",
+      "bytes": 15048,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerScreen.glb",
+      "bytes": 6404,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerKeyboard.glb",
+      "bytes": 3476,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/computerMouse.glb",
+      "bytes": 5868,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/chairDesk.glb",
+      "bytes": 39016,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/tableCoffee.glb",
+      "bytes": 8256,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/pottedPlant.glb",
+      "bytes": 7576,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/plantSmall1.glb",
+      "bytes": 8224,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/plantSmall2.glb",
+      "bytes": 12996,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/rugRound.glb",
+      "bytes": 10164,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/rugRounded.glb",
+      "bytes": 10876,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/rugDoormat.glb",
+      "bytes": 13812,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/lampRoundTable.glb",
+      "bytes": 6604,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/lampRoundFloor.glb",
+      "bytes": 6600,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/books.glb",
+      "bytes": 6864,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/loungeChair.glb",
+      "bytes": 9648,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/bookcaseOpenLow.glb",
+      "bytes": 11520,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/pillow.glb",
+      "bytes": 5044,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/coatRackStanding.glb",
+      "bytes": 13288,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/laptop.glb",
+      "bytes": 5540,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/models/sideTable.glb",
+      "bytes": 8800,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/branding/logo.jpg",
+      "bytes": 267823,
+      "status": 200
+    }
+  ],
+  "loadTiming": {
+    "name": "http://127.0.0.1:4173/",
+    "entryType": "navigation",
+    "startTime": 0,
+    "duration": 14.200000002980232,
+    "navigationId": 1836,
+    "initiatorType": "navigation",
+    "deliveryType": "",
+    "nextHopProtocol": "http/1.1",
+    "renderBlockingStatus": "non-blocking",
+    "contentType": "text/html",
+    "contentEncoding": "",
+    "workerStart": 0,
+    "workerRouterEvaluationStart": 0,
+    "workerCacheLookupStart": 0,
+    "workerMatchedSourceType": "",
+    "workerFinalSourceType": "",
+    "redirectStart": 0,
+    "redirectEnd": 0,
+    "fetchStart": 0.30000000447034836,
+    "domainLookupStart": 0.30000000447034836,
+    "domainLookupEnd": 0.30000000447034836,
+    "connectStart": 0.30000000447034836,
+    "secureConnectionStart": 0,
+    "connectEnd": 0.30000000447034836,
+    "requestStart": 0.7000000029802322,
+    "responseStart": 2.2000000029802322,
+    "firstInterimResponseStart": 0,
+    "finalResponseHeadersStart": 2.2000000029802322,
+    "responseEnd": 2.399999998509884,
+    "transferSize": 4217,
+    "encodedBodySize": 3917,
+    "decodedBodySize": 3917,
+    "responseStatus": 200,
+    "serverTiming": [],
+    "unloadEventStart": 3.899999998509884,
+    "unloadEventEnd": 3.899999998509884,
+    "domInteractive": 10.399999998509884,
+    "domContentLoadedEventStart": 14,
+    "domContentLoadedEventEnd": 14,
+    "domComplete": 14.200000002980232,
+    "loadEventStart": 14.200000002980232,
+    "loadEventEnd": 14.200000002980232,
+    "type": "reload",
+    "redirectCount": 0,
+    "activationStart": 0,
+    "criticalCHRestart": 0,
+    "notRestoredReasons": null,
+    "confidence": {
+      "randomizedTriggerRate": 0.4994798,
+      "value": "low"
+    }
+  },
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+  "browser": "152.0.7977.83",
+  "reducedMotionIdleFrames": 0
+}

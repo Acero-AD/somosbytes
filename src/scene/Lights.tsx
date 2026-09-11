@@ -1,28 +1,34 @@
 import { useEffect, useMemo, useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
-import { ContactShadows } from '@react-three/drei'
+import { ContactShadows, Environment, useEnvironment } from '@react-three/drei'
 import { Color, MathUtils } from 'three'
 import type { AmbientLight, DirectionalLight, HemisphereLight, PointLight } from 'three'
 import { useScene } from '../state/store'
 import { palette } from './palette'
+import { asset } from '../utils/asset'
+
+const ENVIRONMENT = asset('/environments/studio_small_09_1k.hdr')
+useEnvironment.preload({ files: ENVIRONMENT })
 
 const MOODS = {
   day: {
-    ambient: 0.3,
-    hemi: 0.55,
+    ambient: 0.2,
+    hemi: 0.35,
+    environment: 0.65,
     dir: 1.8,
     dirColor: '#ffedd8',
-    magenta: 3.5,
-    purple: 2.5,
+    magenta: 2.2,
+    purple: 1.6,
     backdrop: palette.background,
   },
   dusk: {
-    ambient: 0.16,
-    hemi: 0.22,
-    dir: 0.55,
+    ambient: 0.12,
+    hemi: 0.18,
+    environment: 0.3,
+    dir: 0.75,
     dirColor: '#a9a0e0',
-    magenta: 7,
-    purple: 5.5,
+    magenta: 4,
+    purple: 3,
     backdrop: palette.duskBackground,
   },
 } as const
@@ -44,7 +50,7 @@ export function Lights() {
   // invalidating until everything settles
   useEffect(() => invalidate(), [mood, invalidate])
 
-  useFrame((_, delta) => {
+  useFrame((state, delta) => {
     const target = MOODS[mood]
     const k = 1 - Math.exp(-4 * delta)
     let drift = 0
@@ -66,6 +72,8 @@ export function Lights() {
     dampIntensity(dirRef.current, target.dir)
     dampIntensity(magentaRef.current, target.magenta)
     dampIntensity(purpleRef.current, target.purple)
+    state.scene.environmentIntensity = MathUtils.damp(state.scene.environmentIntensity, target.environment, 4, delta)
+    drift = Math.max(drift, Math.abs(scene.environmentIntensity - target.environment))
     if (dirRef.current) dampColor(dirRef.current.color, target.dirColor)
     if (scene.background instanceof Color) dampColor(scene.background, target.backdrop)
     if (scene.fog) dampColor(scene.fog.color, target.backdrop)
@@ -74,6 +82,7 @@ export function Lights() {
 
   return (
     <>
+      <Environment files={ENVIRONMENT} background={false} environmentIntensity={initial.environment} />
       <ambientLight ref={ambientRef} intensity={initial.ambient} color="#fff4e6" />
       {/* warm sky + floor-bounce fill keeps the walls from going gray */}
       <hemisphereLight ref={hemiRef} args={['#fff6ea', '#d8b99a', initial.hemi]} />

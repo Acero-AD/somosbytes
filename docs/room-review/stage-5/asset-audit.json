@@ -1,0 +1,8 @@
+{
+  "uniqueRequestedFiles": 37,
+  "sceneBytes": 9778972,
+  "decodedImageBytesWithMipmaps": 111848120,
+  "decoderFree": true,
+  "dimensionLimit": 2048,
+  "notes": "Image-memory estimate excludes HDR, PMREM, shadow targets and generated UI textures. Dimensions use recorded preparation measurements."
+}

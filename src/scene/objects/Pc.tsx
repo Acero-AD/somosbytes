@@ -3,14 +3,12 @@ import type { ThreeElements } from '@react-three/fiber'
 import { useScene } from '../../state/store'
 import { ScreenUI } from '../screen/ScreenUI'
 import { palette } from '../palette'
-import { KenneyModel } from './KenneyModel'
+import { MonitorHousing } from './MonitorHousing'
 
 type GroupProps = ThreeElements['group']
 
-// Display quad measured from the GLB vertices: it is a TILTED slab leaning
-// back 0.14 rad — from (y 0.056, z -0.036) to (y 0.287, z -0.068) pre-
-// center/scale, x 0.007..0.386. After centering and x2 scale the quad is
-// 0.758 x 0.467 world, centered at y 0.343 / z ~0 in group space.
+// Preserve the established display dimensions and backward tilt. The custom
+// housing, content planes and HTML transform share this anchor.
 export const SCREEN_CENTER_Y = 0.343
 export const SCREEN_TILT = -0.14
 export const SCREEN_SIZE: [width: number, height: number] = [0.755, 0.465]
@@ -24,7 +22,7 @@ export function Pc(props: GroupProps) {
   const pcActive = useScene((s) => s.activeHotspot === 'pc')
   return (
     <group {...props}>
-      <KenneyModel model="computerScreen" />
+      <MonitorHousing centerY={SCREEN_CENTER_Y} tilt={SCREEN_TILT} />
       <mesh position={[0, SCREEN_CENTER_Y, 0.004]} rotation={[SCREEN_TILT, 0, 0]}>
         <planeGeometry args={SCREEN_SIZE} />
         <meshBasicMaterial color={palette.screenGlow} />

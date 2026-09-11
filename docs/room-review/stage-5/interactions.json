@@ -1,0 +1,23 @@
+{
+  "productionCsp": true,
+  "viewport": [
+    390,
+    844
+  ],
+  "moodPersistence": [
+    "day",
+    "dusk"
+  ],
+  "focusAndReturn": [
+    "Projects",
+    "Writing",
+    "CV",
+    "Contact"
+  ],
+  "pcLinkPopup": true,
+  "arcadeMeshClickAndKeyboard": true,
+  "fallback": true,
+  "interactionPeak": 164,
+  "errors": [],
+  "note": "Gameplay engine progression checked separately on dev; mobile viewport does not measure physical-phone performance."
+}

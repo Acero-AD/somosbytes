@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Transient Playwright CLI session output; selected evidence lives in docs/room-review.
+.playwright-cli/

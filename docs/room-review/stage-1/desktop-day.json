@@ -1,0 +1,249 @@
+{
+  "views": [
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "overview",
+      "state": {
+        "mode": "overview",
+        "activeHotspot": null
+      },
+      "renderer": {
+        "calls": 173,
+        "triangles": 6604,
+        "frame": 8
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "pc",
+      "state": {
+        "mode": "screen",
+        "activeHotspot": "pc"
+      },
+      "renderer": {
+        "calls": 85,
+        "triangles": 3858,
+        "frame": 47
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "magazines",
+      "state": {
+        "mode": "focused",
+        "activeHotspot": "magazines"
+      },
+      "renderer": {
+        "calls": 86,
+        "triangles": 3607,
+        "frame": 289
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "cvFrame",
+      "state": {
+        "mode": "focused",
+        "activeHotspot": "cvFrame"
+      },
+      "renderer": {
+        "calls": 76,
+        "triangles": 2809,
+        "frame": 533
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "phone",
+      "state": {
+        "mode": "focused",
+        "activeHotspot": "phone"
+      },
+      "renderer": {
+        "calls": 77,
+        "triangles": 3715,
+        "frame": 793
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "arcade",
+      "state": {
+        "mode": "screen",
+        "activeHotspot": "arcade"
+      },
+      "renderer": {
+        "calls": 72,
+        "triangles": 2707,
+        "frame": 982
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "orbit-min",
+      "state": {
+        "mode": "overview",
+        "activeHotspot": null
+      },
+      "renderer": {
+        "calls": 173,
+        "triangles": 6620,
+        "frame": 1153
+      }
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "name": "orbit-max",
+      "state": {
+        "mode": "overview",
+        "activeHotspot": null
+      },
+      "renderer": {
+        "calls": 172,
+        "triangles": 6416,
+        "frame": 1364
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "device": "desktop",
+      "mood": "day",
+      "id": "pc",
+      "active": "pc",
+      "mode": "screen",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "id": "magazines",
+      "active": "magazines",
+      "mode": "focused",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "id": "cvFrame",
+      "active": "cvFrame",
+      "mode": "focused",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "id": "phone",
+      "active": "phone",
+      "mode": "focused",
+      "activation": "DOM label click"
+    },
+    {
+      "device": "desktop",
+      "mood": "day",
+      "id": "arcade",
+      "active": "arcade",
+      "mode": "screen",
+      "activation": "dev state hook; mesh click not checked"
+    }
+  ],
+  "notes": [
+    "Desktop browser; mobile viewport is emulation, not a physical phone."
+  ],
+  "reducedMotionIdleFrames": 0,
+  "browser": "152.0.7977.83",
+  "resources": [
+    {
+      "url": "http://127.0.0.1:5173/models/desk.glb",
+      "bytes": 15048
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/computerScreen.glb",
+      "bytes": 6404
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/computerKeyboard.glb",
+      "bytes": 3476
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/computerMouse.glb",
+      "bytes": 5868
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/chairDesk.glb",
+      "bytes": 39016
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/tableCoffee.glb",
+      "bytes": 8256
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/pottedPlant.glb",
+      "bytes": 7576
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/plantSmall1.glb",
+      "bytes": 8224
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/plantSmall2.glb",
+      "bytes": 12996
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/rugRound.glb",
+      "bytes": 10164
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/rugRounded.glb",
+      "bytes": 10876
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/rugDoormat.glb",
+      "bytes": 13812
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/lampRoundFloor.glb",
+      "bytes": 6600
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/lampRoundTable.glb",
+      "bytes": 6604
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/books.glb",
+      "bytes": 6864
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/bookcaseOpenLow.glb",
+      "bytes": 11520
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/loungeChair.glb",
+      "bytes": 9648
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/pillow.glb",
+      "bytes": 5044
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/coatRackStanding.glb",
+      "bytes": 13288
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/laptop.glb",
+      "bytes": 5540
+    },
+    {
+      "url": "http://127.0.0.1:5173/models/sideTable.glb",
+      "bytes": 8800
+    }
+  ]
+}
