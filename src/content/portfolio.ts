@@ -12,6 +12,13 @@ export const portfolio: Portfolio = {
       url: 'https://scribe.somosbytes.es/',
       icon: '/icons/scribe.svg',
     },
+    {
+      id: 'writing-critter',
+      title: 'Writing Critter',
+      description: 'An Omarchy bar plugin. A critter that grows as you hit your daily writing goal — it counts words from your writing apps by watching files. No keyboard access, no network.',
+      url: 'https://plugins.omarchy.org/plugin.html?id=io.github.acero-ad.writing-critter',
+      icon: '/icons/writing-critter.svg',
+    },
   ],
   substackUrl: 'https://somosbytes.substack.com',
   cvPdfPath: '/cv/diego-acero-cv.pdf',
